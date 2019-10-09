@@ -1,0 +1,20 @@
+            </div>
+        </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- My define -->
+<script src="js/scripts.js"></script>
+
+<!-- Script module is here (Only file .js has exists new show here) -->
+<?php foreach($modules as $module): ?>
+
+<?php if(file_exists($module."js")): ?>
+<script src="js/<?php echo $module?>.js"></script>
+<?php endif; ?>
+
+<?php endforeach; ?>
+</body>
+</html>

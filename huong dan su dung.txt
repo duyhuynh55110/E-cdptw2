@@ -1,0 +1,16 @@
+--- Gia su ta co 1 module 335 ---
+
+1. Copy 3 file 
+
+- less/335.less
+- js/335.js (neu co)
+- 335-content
+
+2. Bo vao cac folder
+
+- less/335.less => folder less
+- js/335.js => folder js
+- 335-content => folder container
+
+
+
