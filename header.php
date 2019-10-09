@@ -32,7 +32,7 @@ foreach ($modules as $module){
     
     <!-- Addtional style was here -->
     <?php foreach($styles as $style): ?>
-    <link href="<?php echo $style ?>" rel="stylesheet"> 
+    <link href="css/<?php echo $style ?>" rel="stylesheet"> 
     <?php endforeach; ?>
     
      <!-- Style module is here -->
