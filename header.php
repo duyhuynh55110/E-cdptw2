@@ -30,6 +30,11 @@ foreach ($modules as $module){
     <!-- My define -->
     <link href="css/custom.css" rel="stylesheet"> <!--Main-->
     
+    <!-- Addtional style was here -->
+    <?php foreach($styles as $style): ?>
+    <link href="<?php echo $style ?>" rel="stylesheet"> 
+    <?php endforeach; ?>
+    
      <!-- Style module is here -->
     <?php foreach($modules as $module): ?>
     <link href="css/<?php echo $module ?>.css" rel="stylesheet"> 
