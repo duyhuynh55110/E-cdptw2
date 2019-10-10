@@ -4,7 +4,7 @@
 <?php $scripts = [] ?>
 
 <!--List module was use in this project -->
-<?php $modules = []; ?>
+<?php $modules = [330]; ?>
 
 
 <?php include_once 'header.php';?>
@@ -13,5 +13,5 @@
 <?php foreach($modules as $module): ?>
     <?php include_once "container/$module-content.php" ?> 
 <?php endforeach; ?>
-
+    
 <?php include_once 'footer.php';?>
