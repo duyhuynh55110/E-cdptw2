@@ -1,9 +1,4 @@
-<div class="type-335">
-        <div class="container body">
-            <div class="main_container">
-                <div class="col-md-3 left_col">
-                </div>
-                <div class="right_col">
+
                     <div class="page-title">
                         <div class="title_left">
                             <h3>Projects <small>Listing design</small></h3>
@@ -476,13 +471,4 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <footer>
-
-                </footer>
-
-            </div>
-        </div>
-    </div>
+               
