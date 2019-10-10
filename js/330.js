@@ -1,4 +1,3 @@
-// Panel toolbox
 $(document).ready(function() {
     $('.collapse-link').on('click', function() {
         var $BOX_PANEL = $(this).closest('.x_panel'),
@@ -23,8 +22,4 @@ $(document).ready(function() {
 
         $BOX_PANEL.remove();
     });
-});   
-
-$(document).ready(function() {				
-	init_sidebar();
 });
