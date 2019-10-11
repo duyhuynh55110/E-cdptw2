@@ -151,9 +151,59 @@
     display: none;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 1025px) {
+  .container {
+    width: 109% !important;
+    padding: 0;
+  }
+  .container .x_panel {
+    margin-left: -7px;
+    width: 102%;
+  }
+  .container .x_panel .x_content .bs-example .jumbotron p {
+    width: 250px;
+    margin-bottom: 15px;
+    font-size: 18.5px;
+    font-weight: 200;
+  }
+}
+@media (max-width: 769px) {
   .container {
     width: 150% !important;
     padding: 0;
+  }
+  .container .x_panel {
+    margin-left: -5px;
+    width: 102%;
+  }
+}
+@media (max-width: 426px) {
+  .container {
+    width: 150% !important;
+    padding: 0;
+  }
+  .container .x_panel {
+    margin-left: -30px;
+    width: 109%;
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    width: 150% !important;
+    padding: 0;
+  }
+  .container .x_panel {
+    margin-left: -25px;
+    width: 111%;
+  }
+}
+@media (max-width: 321px) {
+  .container {
+    width: 150% !important;
+    padding: 0;
+  }
+  .container .x_panel {
+    margin-left: -25px;
+    width: 111%;
   }
 }
