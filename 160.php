@@ -9,9 +9,10 @@
 
 <?php include_once 'header.php';?>
 
+
 <!-- Container is here (include code here) -->
 <?php foreach($modules as $module): ?>
     <?php include_once "container/$module-content.php" ?> 
 <?php endforeach; ?>
-    
+
 <?php include_once 'footer.php';?>

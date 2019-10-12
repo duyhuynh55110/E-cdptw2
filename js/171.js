@@ -15,20 +15,61 @@ $(document).ready(function() {
         })
 })
 
+//Duy code - list column, sort column, process bar
 var table_projects = new Vue({
-    el: ".type-335",
+    el: ".type-171",
     data: {
+        status: 'asc',
         projects: [
-            {id: 1, name: "Duy Project", team_member: 4, process: 17, status: "success" , created_at: "04.01.2015"},
-            {id: 2, name: "Trang Project", team_member: 2, process: 22, status: "success" , created_at: "07.01.2015"},
-            {id: 3, name: "Cong Project", team_member: 3, process: 32, status: "success" , created_at: "01.01.2015"},
-            {id: 4, name: "Thuy Project", team_member: 5, process: 32, status: "success" , created_at: "01.01.2015"},
+            { id: 1, name: "Duy Project", team_member: 4, process: 17, status: "success", created_at: "04.01.2015" },
+            { id: 2, name: "Trang Project", team_member: 2, process: 22, status: "success", created_at: "07.01.2015" },
+            { id: 3, name: "Cong Project", team_member: 12, process: 32, status: "success", created_at: "01.01.2015" },
+            { id: 4, name: "Thuy Project", team_member: 5, process: 32, status: "success", created_at: "01.01.2015" },
         ],
-        timer: null
+        timer: null,
+        sortDirection: "DESC"
     },
     mounted() {
-            this.timer = setInterval(() => {
-              this.projects.forEach(project => (project.process = 25 + Math.floor(Math.random() * 75)))
-            }, 2000)
+        this.timer = setInterval(() => {
+            this.projects.forEach(project => (project.process = 25 + Math.floor(Math.random() * 75)))
+        }, 2000)
+    },
+    methods: {
+        //hàm s?p x?p d?a vào id
+        sortBy: function(column) {
+            if (status == 'asc') {
+                status = 'desc';
+                switch (column) {
+                    case "id":
+                        this.projects.sort(function(a, b) {
+                            return a.id < b.id;
+                        });
+                        break;
+                    case "name":
+                        this.projects.sort(function(a, b) {
+                            return a.name < b.name;
+                        });
+                        break;
+
+                }
+
+            } else {
+                status = 'asc';
+                switch (column) {
+                    case "id":
+                        this.projects.sort(function(a, b) {
+                            return a.id > b.id;
+                        });
+                        break;
+                    case "name":
+                        this.projects.sort(function(a, b) {
+                            return a.name > b.name;
+                        });
+                        break;
+
+                };
+            }
+
+        }
     }
 })
