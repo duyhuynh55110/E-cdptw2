@@ -1,0 +1,213 @@
+@font-size: 13px;
+@background-color: #fff;
+@color: #73879C;
+
+@border-color: #E6E9ED;
+@border-chart: 1px solid #ccc;
+
+@list-style: none;
+@line-height: 2.5em;
+
+@margin: 10px;
+
+/*Media Screen*/
+@md-992: 992px;
+@sm-768: 768px;
+@xs-480: 480px;
+
+.type-155 {
+    .admin-panel {
+        width: 100%;
+        padding: 10px 17px;
+        display: inline-block;
+        background: @background-color;
+        border: 1px solid @border-color;
+        opacity: 1;
+        transition: all .2s ease;
+        margin-bottom: @margin;
+        position: relative;
+        margin-top: @margin;
+        .admin-title {
+            border-bottom: 2px solid @border-color;
+            padding: 5px 5px 6px !important;
+            span, .fa{
+                color: #BAB8B8;
+            }
+
+            h2 {
+                margin: 5px 0 6px;
+                float: left;
+                display: block;
+                font-size: 20px;
+                color: @color;
+                small {
+                    line-height: @line-height;
+                    margin-left: @margin;
+                    font-size: @font-size;
+                }
+            }
+            .filter-time {
+                font-size: @font-size;
+                .show-calendar {
+                    float: right;
+                    border: 1px solid @border-color;
+                    cursor: pointer;
+                    padding: 4px 10px;
+                    background-color: @background-color;
+                    #datepicker {
+                        border: none;
+                        color: @color;
+                        padding-left: 5px;
+                    }
+                }
+            }
+
+        }
+        .admin-content {
+            padding: 0 5px 6px;
+            float: left;
+            clear: both;
+            margin-top: 5px;
+
+            #chartRainContainer {
+                height: 300px;
+                width: 100%;
+            }
+            .total-chart {
+                border-top: 1px solid #ccc;
+                margin-top: 15px;
+                margin-bottom: 0;
+                color: @color;
+                h2 {
+                    margin-top: @margin;
+                    margin-bottom: @margin;
+                    font-size: @font-size + 7px;
+                }
+
+                #chartCoalContainer2, #chartCoalContainer3, #chartCoalContainer4 {
+                    height: 120px;
+                }
+
+                span{
+                    font-size: @font-size + 4px;
+                }
+
+                .col-chart{
+                    padding: 11px 0;
+                }
+            }
+            .admin-title {
+                border-bottom: 2px solid @border-color;
+
+                h2 {
+                    margin: 5px 0 6px;
+                    float: left;
+                    display: block;
+                }
+                .profile-user {
+                    min-width: 70px;
+                    float: right;
+                    margin-right: 0;
+                    list-style: @list-style;
+                    padding-left: 0;
+                    margin-top: 5px;
+                    li {
+                        float: left;
+                        cursor: pointer;
+
+                        a{
+                            padding: 5px;
+                            color: #C5C7CB;
+                            font-size: @font-size;
+
+                            &:hover{
+                                i{
+                                    color: #2e6da4;
+                                }
+                            }
+                        }
+                    }
+                }
+                .collapse-link, .close-link {
+                    opacity: 1;
+                }
+            }
+            ul.profiles-user {
+                padding-left: 0;
+                list-style: @list-style;
+                li:nth-child(odd) {
+                    background-color: #eee;
+                }
+                li {
+                    margin-top: 5px;
+                    padding: 2px;
+
+                    .profile-thumb {
+                        border: 1px solid #9CC2CB!important;
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px 10px 5px 0;
+                        border-radius: 50%;
+                        padding: 9px 12px;
+                        float:left;
+                        i {
+                            font-size: 30px;
+                            color: @color;
+                        }
+                    }
+                    .profile-comment {
+                        color: #5A738E;
+                        display: table-cell;
+                        vertical-align: top;
+                        width: 10000px;
+                        a.title {
+                            font-weight: 700;
+                            text-decoration: none;
+                            line-height: 23px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        p {
+                            margin-bottom: 0;
+                            small {
+                                font-size: 85%;
+                            }
+                            span {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown-menu {
+            min-width: unset;
+            li{
+                float: none !important;
+            }
+
+        }
+        .highcharts-credits{
+            display: none;
+           }
+    }
+
+    /*----------REPONSIVE-------------*/
+    //mobile device
+    @media (max-width: @xs-480){
+        .admin-panel .admin-title h2 small{
+            display: block;
+            margin-left: 0;
+
+        }
+        .admin-panel .admin-title .filter-time .show-calendar{
+            float: none;
+            display: table;
+            margin: 0 auto;
+        }
+        //Total Chart
+        .col-chart{
+            border-bottom: @border-chart;
+        }
+    }
+}
