@@ -4,7 +4,7 @@
 <?php $scripts = [] ?>
 
 <!--List module was use in this project -->
-<?php $modules = [168, 1681, 1682]; ?>
+<?php $modules = [168]; ?>
 
 
 <?php include_once 'header.php';?>
