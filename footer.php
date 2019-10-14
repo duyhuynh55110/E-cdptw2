@@ -4,7 +4,9 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-progressbar.min.js"></script>
 <script src="js/vue.min.js"></script>
+<script src="js_TT/jquery-ui.js"></script>
 
 <!-- Addtional scripts was here -->
 <?php foreach($scripts as $script): ?>

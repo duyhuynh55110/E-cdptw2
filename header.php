@@ -29,7 +29,7 @@ foreach ($modules as $module){
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- My define -->
     <link href="css/custom.css" rel="stylesheet"> <!--Main-->
-    
+    <link href="css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- Addtional style was here -->
     <?php foreach($styles as $style): ?>
     <link href="css/<?php echo $style ?>" rel="stylesheet"> 

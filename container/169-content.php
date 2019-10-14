@@ -604,7 +604,7 @@
             </div>
             <div class="x_content">
                 <div class="">
-                    <ul class="to_do">
+                    <ul class="to_do" id="sortable">
                         <li>
                             <p>
                                 <input type="checkbox" class="flat"> Schedule meeting with new client </p>
