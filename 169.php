@@ -1,7 +1,7 @@
 <!--List private style of this page. Ex: daterangepicker.min.css, boostrap-floater.min.js -->
 <?php $styles = [] ?>
 <!--List private script of this page. Ex: rocket-load.min.js, pagination.min.js -->
-<?php $scripts = [] ?>
+<?php $scripts = [169] ?>
 
 <!--List module was use in this project -->
 <?php $modules = [169]; ?>
