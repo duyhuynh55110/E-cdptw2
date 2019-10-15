@@ -369,3 +369,9 @@
     width: 107%;
   }
 }
+@media (max-width: 320px) {
+  .type-168 {
+    font-size: 8px;
+    padding-left: 3px;
+  }
+}

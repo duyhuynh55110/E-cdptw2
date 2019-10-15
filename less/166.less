@@ -1,0 +1,73 @@
+@color_1: #C5C7CB;
+@color_2: #E6E9ED;
+@float: left;
+@display: block;
+@font-size: 18px;
+@font-weight: 400;
+@width: 100%;
+@margin: 10px;
+.x_title {
+	border-bottom: 2px solid @color_2;
+	padding: 1px 5px 6px;
+	h2 {
+		margin: 5px 0 6px;
+		float: @float;
+		display: @display;
+	}
+}
+h2 {
+	font-size: @font-size;
+	font-weight: @font-weight;
+}
+.panel_toolbox {
+	min-width: 70px;
+	>li {
+		float: @float;
+		cursor: pointer;
+		>a {
+			padding: 5px;
+			color: @color_1;
+			font-size: @font-size - 4;
+		}
+	}
+}
+.navbar-right {
+	margin-right: 0;
+}
+.nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	>li {
+		position: relative;
+		display: @display;
+	}
+}
+.x_content {
+	padding: 0 5px 6px;
+	float: @float;
+	clear: both;
+	margin-top: @margin - 5;
+	width: @width;
+}
+table.tile {
+	td {
+		ul {
+			li {
+				a {
+					width: @width;
+				}
+			}
+		}
+	}
+}
+table.tile_info {
+	width: @width;
+}
+.row {
+	margin-right: 0  - @margin;
+	margin-left: 0 - @margin;
+}
+.form-group {
+	margin-bottom: @margin;
+}
