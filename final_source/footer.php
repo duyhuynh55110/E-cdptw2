@@ -8,7 +8,6 @@
 <script src="js/vue.min.js"></script>
 <script src="js_TT/jquery-ui.js"></script>
 
-
 <!-- Addtional scripts was here -->
 <?php foreach($scripts as $script): ?>
 <script src="js/<?php echo $script ?>"></script>

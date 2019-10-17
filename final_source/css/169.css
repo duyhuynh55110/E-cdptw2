@@ -31,6 +31,7 @@
 }
 .type-169 .x_panel .x_title .panel_toolbox {
   float: right;
+  margin-top: -38px;
   min-width: 70px;
 }
 .type-169 .x_panel .x_title .panel_toolbox li {
