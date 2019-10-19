@@ -18,7 +18,7 @@
 @position          : relative;
 @vertical-align    : middle;
 
-body {
+.font-type {
 	color      : #73879C;
 	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
 	font-size  : 13px;
@@ -28,9 +28,9 @@ body {
 }
 
 .type-165 {
+	.font-type;
+
 	width: @width ;
-
-
 
 	.x_panel {
 		width     : @width ;
@@ -142,12 +142,11 @@ body {
 
 
 	.editor-wrapper {
-		min-width       : 99%;
 		min-height      : 250px;
 		background-color: @color_2;
 		border-collapse : separate;
 		border          : 1px solid #ccc;
-		padding         : 4px;
+		padding         : 10px;
 		box-sizing      : content-box;
 		box-shadow      : rgba(0, 0, 0, .07451) 0 1px 1px 0 inset;
 		overflow        : scroll;
@@ -214,6 +213,7 @@ body {
 		padding-left: 233px;
 	}
 }
+
 @media(max-width: 320px){
 	h2{
 	white-space: nowrap;
@@ -224,8 +224,8 @@ body {
 	.nav {
 		padding-left: 150px !important;
 	}
-
 }
+
 @media(max-width: 375px){
 	h2{
 	white-space: nowrap;
@@ -236,37 +236,35 @@ body {
 	.nav {
 		padding-left: 206px !important;
 	}
-
 }
+
 @media(max-width: 414px){
 	.nav {
 		padding-left: 250px !important;
 	}
-
 }
+
 @media (max-width: 375px){
 	.nav {
 		padding-left: 205px !important;
 	}
-
 }
 
 @media(min-width: 320px){
 	.nav {
 		padding-left: 155px !important;
 	}
-
 }
+
 @media (min-width: 375px){
 	.nav {
 		padding-left: 209px !important;
 	}
-
 }
+
 @media (min-width:425px){
 	.nav {
 		padding-left: 258px !important;
 	}
-
 }
 }
