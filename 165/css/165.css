@@ -1,5 +1,5 @@
 .font-type {
-  color: #73879C;
+  color: #73879C !important;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -7,7 +7,7 @@
   padding: 10px;
 }
 .type-165 {
-  color: #73879C;
+  color: #73879C !important;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -19,7 +19,7 @@
   width: 100%;
   padding: 10px 17px;
   display: inline-block;
-  background: #fff;
+  background: #fff !important;
   border: 1px solid #E6E9ED;
   opacity: 1;
   transition: all .2s ease;
@@ -88,11 +88,12 @@
   display: block;
 }
 .type-165 .btn-B {
-  color: #fff;
+  color: #fff !important;
   background-color: #5bc0de;
   border-color: #46b8da;
 }
 .type-165 .btn-group .btn {
+  color: #5a738e;
   margin-left: 0;
   margin-bottom: 0;
   margin-right: 0;
@@ -101,7 +102,7 @@
 }
 .type-165 .editor-wrapper {
   min-height: 250px;
-  background-color: #fff;
+  background-color: #fff !important;
   border-collapse: separate;
   border: 1px solid #ccc;
   padding: 10px;
@@ -130,7 +131,7 @@
 .type-165 .btn:visited,
 .type-165 .btn:hover,
 .type-165 .btn:active {
-  background-color: #269abc;
+  color: #151414 !important;
   display: block;
 }
 .type-165 *,

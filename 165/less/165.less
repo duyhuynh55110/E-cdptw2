@@ -1,5 +1,5 @@
 @color_1           : #C5C7CB;
-@color_2           : #fff;
+@color_2           : #fff !important;
 @color_3           : #5A738E;
 @color_4           : inherit;
 @color_5           : #555;
@@ -17,9 +17,10 @@
 @display1          : block;
 @position          : relative;
 @vertical-align    : middle;
+@hover_color: #151414 !important;
 
 .font-type {
-	color      : #73879C;
+	color      : #73879C !important;
 	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
 	font-size  : 13px;
 	font-weight: 400;
@@ -132,6 +133,7 @@
 
 	.btn-group {
 		.btn {
+			color: #5a738e;
 			margin-left  : 0;
 			margin-bottom: 0;
 			margin-right : 0;
@@ -174,8 +176,8 @@
 	.btn:visited,
 	.btn:hover,
 	.btn:active {
-		background-color: #269abc;
-		display         : block;
+		color: @hover_color;
+		display: block;
 	}
 
 	*,

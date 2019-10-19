@@ -65,7 +65,7 @@
                             </div>
 
                             <div class="btn-group">
-                                <a class="btn btn-B" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i
+                                <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i
                                         class="fa fa-bold"></i></a>
                                 <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i
                                         class="fa fa-italic"></i></a>
