@@ -1,5 +1,6 @@
 <div class="type-330">
     <!-- page content -->
+    <div class="nav-md">
         <div class="container body">
             <div class="main_container">
                 <div class="page-title">
@@ -248,10 +249,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="clearfix"></div>
                     <?php include "331-content.php" ?>
                 </div>
             </div>
         </div>
+    </div>
 </div>
