@@ -1,0 +1,272 @@
+@color_1           : #C5C7CB;
+@color_2           : #fff;
+@color_3           : #5A738E;
+@color_4           : inherit;
+@color_5           : #555;
+@background_color_1: #5bc0de;
+@background_color_2: transparent;
+@color             : #fff;
+@border_color_1    : #46b8da;
+@border            : #E6E9ED;
+@width             : 100%;
+@mar-padd          : 10px;
+@font-size         : 18px;
+@font-weight       : 400;
+@display           : inline-block;
+@float             : left;
+@display1          : block;
+@position          : relative;
+@vertical-align    : middle;
+
+body {
+	color      : #73879C;
+	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+	font-size  : 13px;
+	font-weight: 400;
+	line-height: 1.471;
+	padding    : 10px;
+}
+
+.type-165 {
+	width: @width ;
+
+
+
+	.x_panel {
+		width     : @width ;
+		padding   : 10px 17px;
+		display   : @display;
+		background: @color_2;
+		border    : 1px solid @border;
+		opacity   : 1;
+		transition: all .2s ease;
+
+		.x_title {
+			margin-bottom: @mar-padd;
+			border-bottom: 2px solid @border;
+			padding      : 1px 5px 6px;
+
+			h2 {
+				margin     : 5px 0 6px;
+				float      : @float;
+				display    : @display1;
+				overflow   : hidden;
+				font-size  : @font-size;
+				font-weight: @font-weight;
+
+				small {
+					margin-left: @mar-padd;
+				}
+			}
+		}
+	}
+
+	.panel_toolbox {
+		min-width: 70px;
+
+		>li {
+			>a {
+				padding  : 5px;
+				color    : @color_1;
+				font-size: @font-size - 4;
+			}
+		}
+	}
+
+	.navbar-right {
+		margin-right: 0;
+	}
+
+	.nav {
+		padding-left : 0;
+		margin-bottom: 0;
+		list-style   : none;
+
+		>li {
+			position: relative;
+			display : @display;
+		}
+	}
+
+	.x_content {
+		padding   : 0 5px 6px;
+		float     : @float;
+		clear     : both;
+		margin-top: @margin - 5;
+		width     : @width;
+	}
+
+	.editor.btn-toolbar {
+		zoom      : 1;
+		background: #F7F7F7;
+		margin    : 5px 2px;
+		padding   : 3px 0;
+		border    : 1px solid #EFEFEF;
+	}
+
+	.btn-toolbar {
+		.btn-group {
+			margin-left   : 5px;
+			float         : @float;
+			position      : @position;
+			display       : @display;
+			vertical-align: @vertical-align;
+		}
+	}
+
+	a:active {
+		outline: 0;
+	}
+
+	.open {
+		.dropdown-menu {
+			display: @display1;
+		}
+	}
+
+	.btn-B {
+		color           : @color_2;
+		background-color: @background_color_1;
+		border-color    : @border_color_1;
+	}
+
+	.btn-group {
+		.btn {
+			margin-left  : 0;
+			margin-bottom: 0;
+			margin-right : 0;
+			float        : @float;
+			position     : @position;
+		}
+	}
+
+
+	.editor-wrapper {
+		min-width       : 99%;
+		min-height      : 250px;
+		background-color: @color_2;
+		border-collapse : separate;
+		border          : 1px solid #ccc;
+		padding         : 4px;
+		box-sizing      : content-box;
+		box-shadow      : rgba(0, 0, 0, .07451) 0 1px 1px 0 inset;
+		overflow        : scroll;
+		outline         : 0;
+		border-radius   : 3px;
+	}
+
+	.col-md-12,
+	.col-md-3,
+	.col-md-9,
+	.col-sm-12,
+	.col-sm-3,
+	.col-sm-9,
+	.col-xs-12,
+	.col-xs-3,
+	.col-xs-9 {
+		position     : @position;
+		min-height   : 1px;
+		float        : @float;
+		padding-right: @mar-padd;
+		padding-left : @mar-padd;
+	}
+
+	.btn-B:link,
+	.btn:visited,
+	.btn:hover,
+	.btn:active {
+		background-color: #269abc;
+		display         : block;
+	}
+
+	*,
+	:after,
+	:before {
+		box-sizing: border-box;
+	}
+	
+@media(max-width: 320px){
+	h2{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	width: 156px;
+	}
+	.nav {
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+		>li {
+			position: relative;
+			display: @display;
+		}
+	}
+	input[type=file]{
+		white-space: normal;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		width: 72px;
+	}
+
+}
+@media(max-width: 411px){
+	.nav {
+		padding-left: 233px;
+	}
+}
+@media(max-width: 320px){
+	h2{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	width: 156px;
+	}
+	.nav {
+		padding-left: 150px !important;
+	}
+
+}
+@media(max-width: 375px){
+	h2{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	width: 156px;
+	}
+	.nav {
+		padding-left: 206px !important;
+	}
+
+}
+@media(max-width: 414px){
+	.nav {
+		padding-left: 250px !important;
+	}
+
+}
+@media (max-width: 375px){
+	.nav {
+		padding-left: 205px !important;
+	}
+
+}
+
+@media(min-width: 320px){
+	.nav {
+		padding-left: 155px !important;
+	}
+
+}
+@media (min-width: 375px){
+	.nav {
+		padding-left: 209px !important;
+	}
+
+}
+@media (min-width:425px){
+	.nav {
+		padding-left: 258px !important;
+	}
+
+}
+}
