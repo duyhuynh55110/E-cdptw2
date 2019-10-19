@@ -1,0 +1,222 @@
+.type-158 body .container.body .right_col {
+  background: #F7F7F7;
+}
+.type-158 .nav-md .container.body .right_col {
+  padding: 10px 20px 0;
+  margin-left: 230px;
+}
+@media (max-width: 1200px) {
+  .type-158 .x_title h2 {
+    width: 62%;
+    font-size: 17px;
+  }
+}
+@media (max-width: 1270px) and (min-width: 192px) {
+  .type-158 .x_title h2 small {
+    display: none;
+  }
+}
+.type-158 .container {
+  width: 100%;
+  padding: 0;
+}
+.type-158 body {
+  color: #73879C;
+  background: #2A3F54;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.471;
+}
+.type-158 .form-control {
+  border-radius: 0;
+  width: 100%;
+}
+.type-158 .form-control:focus {
+  border-color: #CCD0D7;
+  box-shadow: none !important;
+}
+.type-158 .form-horizontal .form-group {
+  margin-right: 0;
+  margin-left: 0;
+}
+.type-158 .center-margin {
+  margin: 0 auto;
+  float: none !important;
+}
+.type-158 .col-md-3,
+.type-158 .col-md-4,
+.type-158 .col-md-6,
+.type-158 .col-md-7,
+.type-158 .col-md-8,
+.type-158 .col-md-12,
+.type-158 .col-sm-2,
+.type-158 .col-sm-4,
+.type-158 .col-sm-6,
+.type-158 .col-sm-8,
+.type-158 .col-sm-12,
+.type-158 .col-xs-12 {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.type-158 .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.type-158 .h1,
+.type-158 .h2,
+.type-158 .h3,
+.type-158 h1,
+.type-158 h2,
+.type-158 h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.type-158 a {
+  color: #5A738E;
+}
+.type-158 a,
+.type-158 a:active,
+.type-158 a:focus,
+.type-158 a:visited {
+  outline: 0;
+}
+.type-158 .navbar-right {
+  margin-right: 0;
+}
+.type-158 .nav>li>a {
+  position: relative;
+  display: block;
+}
+.type-158 .nav>li>a {
+  padding: 13px 15px 12px;
+}
+.type-158 .nav>li>a:focus,
+.type-158 .nav>li>a:hover {
+  background-color: transparent;
+}
+.type-158 .panel_toolbox {
+  float: right;
+  min-width: 70px;
+}
+.type-158 .panel_toolbox>li {
+  float: left;
+  cursor: pointer;
+}
+.type-158 .panel_toolbox>li>a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 14px;
+}
+.type-158 .panel_toolbox>li>a:hover {
+  background: #F5F7FA;
+}
+.type-158 .degrees:after,
+.type-158 .x_content,
+.type-158 .x_panel {
+  position: relative;
+}
+.type-158 *,
+.type-158 :after,
+.type-158 :before {
+  box-sizing: border-box;
+}
+.type-158 h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.type-158 .x_panel,
+.type-158 .x_title {
+  margin-bottom: 10px;
+}
+.type-158 .x_panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  opacity: 1;
+  transition: all .2s ease;
+}
+.type-158 .x_title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+}
+.type-158 .x_title .filter {
+  width: 40%;
+  float: right;
+}
+.type-158 .x_title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+}
+.type-158 .x_title h2 small {
+  margin-left: 10px;
+}
+.type-158 .x_title span {
+  color: #BDBDBD;
+}
+.type-158 .x_content {
+  padding: 0 5px 6px;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+}
+.type-158 .x_content h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.type-158 .x_content,
+.type-158 table.tile td ul li a,
+.type-158 table.tile_info {
+  width: 100%;
+}
+.type-158 .overflow_hidden,
+.type-158 .sidebar-widget,
+.type-158 .site_title,
+.type-158 .tile,
+.type-158 .weather-days .col-sm-2,
+.type-158 .x_title h2,
+.type-158 table.tile_info td p {
+  overflow: hidden;
+}
+.type-158 .dropdown-menu {
+  box-shadow: none;
+  display: none;
+  float: left;
+  font-size: 12px;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  text-shadow: none;
+  top: 100%;
+  z-index: 9998;
+  border: 1px solid #D9DEE4;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.type-158 .dropdown-menu>li>a {
+  color: #5A738E;
+}
+.type-158 .demo-placeholder {
+  height: 280px;
+}
+.type-158 a:focus {
+  outline: 0;
+}
+.type-158 .clearfix:after,
+.type-158 form:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
