@@ -235,3 +235,105 @@
 .type-159 .progress_summary .progress.progress_sm .progress-bar {
   height: 10px !important;
 }
+@media only screen and (max-width: 321px) {
+  .type-159 .x_panel {
+    width: 120% !important;
+    margin-left: -6%;
+  }
+  .type-159 .x_panel .x_content .progress {
+    height: 10px;
+  }
+  .type-159 .x_panel .x_content table.tile_info td p {
+    padding-right: 13px;
+    width: 102%;
+    margin: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px !important;
+  }
+  .type-159 .x_panel .x_content .P_left {
+    margin: 0 0 10px;
+    margin-left: -10px;
+  }
+  .type-159 .x_panel .x_content .P_left1 {
+    margin-left: 12px;
+  }
+  .type-159 .x_panel .x_content .widget_summary .w_right span {
+    font-size: 12px;
+  }
+  .type-159 .x_panel .x_title h2 {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .type-159 .x_panel {
+    width: 112% !important;
+    margin-left: -6%;
+  }
+  .type-159 .x_panel .x_content .progress {
+    height: 10px;
+  }
+  .type-159 .x_panel .x_content table.tile_info td p {
+    padding-right: 13px;
+    width: 102%;
+    margin: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px !important;
+  }
+  .type-159 .x_panel .x_content .P_left {
+    margin: 0 0 10px;
+    margin-left: -10px;
+  }
+  .type-159 .x_panel .x_content .P_left1 {
+    margin-left: 13px;
+  }
+  .type-159 .x_panel .x_content .widget_summary .w_right span {
+    font-size: 13px;
+  }
+  .type-159 .x_panel .x_title h2 {
+    font-size: 17px !important;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .type-159 .x_panel {
+    width: 105% !important;
+    margin-left: -11%;
+  }
+  .type-159 .x_panel .x_content .progress {
+    height: 10px;
+  }
+  .type-159 .x_panel .x_content table.tile_info td p {
+    padding-right: 13px;
+    width: 102%;
+    margin: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px !important;
+  }
+  .type-159 .x_panel .x_content .P_left {
+    margin: 0 0 10px;
+    margin-left: -10px;
+  }
+  .type-159 .x_panel .x_content .P_left1 {
+    margin-left: 13px;
+  }
+  .type-159 .x_panel .x_content .widget_summary .w_right span {
+    font-size: 13px;
+  }
+  .type-159 .x_panel .x_title h2 {
+    font-size: 17px !important;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .type-159 .x_panel {
+    width: 105% !important;
+    margin-left: -16%;
+  }
+}

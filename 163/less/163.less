@@ -1,4 +1,5 @@
 .type-163 {
+  margin-top: 20px;
   color: #73879c;
   .x_panel {
     width: 100%;
@@ -12,13 +13,17 @@
     transition: all 0.2s ease;
     margin-bottom: 10px;
     .x_title {
-      margin-bottom: 10px;
       border-bottom: 2px solid #e6e9ed;
       padding: 1px 5px 6px;
-      h2 {
-        margin: 5px 0 6px;
-        float: left;
-        display: block;
+      .navbar-right {
+        margin: 0;
+        width: 15%;
+        float: right;
+        li {
+          display: inline-block;
+          float: right;
+          position: static;
+        }
       }
       .panel_toolbox {
         float: right;
@@ -26,23 +31,29 @@
         li {
           float: left;
           cursor: pointer;
+          a {
+            padding: 5px;
+            color: #c5c7cb;
+            font-size: 14px;
+            &:hover {
+              background: #f5f7fa;
+            }
+          }
         }
       }
-      .navbar-right {
-        margin-right: 0;
-      }
-      .nav {
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-        li {
-          position: relative;
-          display: block;
-          a {
-            position: relative;
-            display: block;
-            background-color: transparent;
-          }
+      h2 {
+        margin: 5px 0 6px;
+        float: left;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: inherit;
+        line-height: 1.1;
+        color: inherit;
+        small {
+          margin-left: 10px;
         }
       }
     }

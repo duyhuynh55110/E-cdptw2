@@ -117,3 +117,20 @@
 .type-157 .x_panel .x_content .media:first-child {
   margin-top: 0;
 }
+@media only screen and (max-width: 769px) {
+  .type-157 .x_panel {
+    width: 105% !important;
+    margin-left: -5%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .type-157 .x_panel {
+    width: 105% !important;
+    margin-left: -11%;
+  }
+}
+@media only screen and (max-width: 1445) {
+  .type-157 .container {
+    width: 100%;
+  }
+}

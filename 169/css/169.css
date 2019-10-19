@@ -229,15 +229,11 @@
   }
 }
 @media (max-width: 1025px) {
-  .container {
-    width: 109% !important;
-    padding: 0;
-  }
-  .container .x_panel {
+  .x_panel {
     margin-left: -7px;
     width: 102%;
   }
-  .container .x_panel .x_content .bs-example .jumbotron p {
+  .x_panel .x_content .bs-example .jumbotron p {
     width: 250px;
     margin-bottom: 15px;
     font-size: 18.5px;
