@@ -299,15 +299,14 @@
     font-size: 17px !important;
   }
 }
-@media only screen and (max-width: 769px) {
-  .type-159 .x_panel {
-    width: 105% !important;
-    margin-left: -11%;
+@media only screen and (max-width: 769px) and (min-width: 427px) {
+  .type-159 .container {
+    width: 100%;
   }
-  .type-159 .x_panel .x_content .progress {
+  .type-159 .container .x_content .progress {
     height: 10px;
   }
-  .type-159 .x_panel .x_content table.tile_info td p {
+  .type-159 .container .x_content table.tile_info td p {
     padding-right: 13px;
     width: 102%;
     margin: 0;
@@ -317,23 +316,25 @@
     overflow: hidden;
     font-size: 12px !important;
   }
-  .type-159 .x_panel .x_content .P_left {
+  .type-159 .container .x_content .P_left {
     margin: 0 0 10px;
-    margin-left: -10px;
+    margin-left: -20px;
   }
-  .type-159 .x_panel .x_content .P_left1 {
+  .type-159 .container .x_content .P_left1 {
     margin-left: 13px;
   }
-  .type-159 .x_panel .x_content .widget_summary .w_right span {
+  .type-159 .container .x_content .widget_summary .w_right span {
     font-size: 13px;
   }
-  .type-159 .x_panel .x_title h2 {
+  .type-159 .container .x_title h2 {
     font-size: 17px !important;
   }
 }
-@media only screen and (max-width: 1025px) {
-  .type-159 .x_panel {
-    width: 105% !important;
-    margin-left: -16%;
+@media only screen and (max-width: 321px) {
+  .type-159 .container {
+    width: 100%;
+  }
+  .type-159 .container .x_content {
+    padding: 0px;
   }
 }

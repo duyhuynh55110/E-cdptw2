@@ -143,12 +143,12 @@
                                         <p>Top 5</p>
                                     </th>
                                     <th>
-                                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-                                            <p class="">Device</p>
-                                        </div>
-                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                            <p class="">Progress</p>
-                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-5 P_left">
+                                        <p class="">Device</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 P_left1">
+                                        <p class="">Progress</p>
+                                    </div>
                                     </th>
                                 </tr>
                                 <tr>

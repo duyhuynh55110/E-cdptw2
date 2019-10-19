@@ -30,7 +30,7 @@
   margin: 0 0 0 10px;
   z-index: 5;
   padding: 0;
-  color: #BAB8B8;
+  color: #bab8b8;
   margin-left: -99px;
 }
 .type-154 .top_tiles .tile-stats p {
@@ -60,4 +60,28 @@
   margin: 0 0 0 -193px;
   z-index: 5;
   padding: 0;
+}
+@media (max-width: 1025px) and (min-width: 427px) {
+  .container {
+    margin-left: -4%;
+    width: 107%;
+  }
+  .container .tile-stats {
+    padding-left: 25%;
+  }
+}
+@media (max-width: 426px) and (min-width: 322px) {
+  .container {
+    margin-left: -4%;
+    width: 107%;
+  }
+  .container .tile-stats .icon {
+    padding-right: 45px;
+  }
+}
+@media (max-width: 321px) {
+  .container {
+    width: 112%;
+    margin-left: -6%;
+  }
 }

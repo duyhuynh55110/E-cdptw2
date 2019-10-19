@@ -1,6 +1,5 @@
 .type-160 {
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 100%;
 }
 .type-160 .admin-panel {
   width: 100%;
@@ -155,42 +154,48 @@
 .highcharts-credits {
   display: none !important;
 }
+@media (max-width: 321px) {
+  .contaiter {
+    width: 150% !important;
+    margin-left: -25%;
+  }
+}
 @media only screen and (max-width: 414px) {
-  .type-11 {
+  .contaiter {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .type-11 .cham {
+  .contaiter .cham {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 50%;
   }
-  .type-11 .admin-panel {
+  .contaiter .admin-panel {
     width: 100%;
     height: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .type-11 {
+  .contaiter {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .type-11 .cham {
+  .contaiter .cham {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 50%;
   }
-  .type-11 .admin-panel {
+  .contaiter .admin-panel {
     width: 100%;
   }
-  .type-11 .admin-panel .admin-content .h-3 {
+  .contaiter .admin-panel .admin-content .h-3 {
     margin-left: 3% !important;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .type-11 .cham {
+  .contaiter .cham {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

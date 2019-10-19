@@ -39,5 +39,4 @@
 <body>
     <?php include $dir_block.'/159-content.php'; ?>
 </body>
-<script src="<?php echo $url_path ?>/js/custom.min.js"></script>
 </html>

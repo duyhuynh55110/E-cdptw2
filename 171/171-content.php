@@ -1,13 +1,14 @@
 <?php
-    $url_host = 'http://'.$_SERVER['HTTP_HOST'];
-    $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
-    $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
-    
-    preg_match_all($pattern_uri, __DIR__, $matches);
-    $url_path = $url_host . $matches[1][0];
-    $url_path = str_replace('\\', '/', $url_path);
+$url_host = 'http://' . $_SERVER['HTTP_HOST'];
+$pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
+$pattern_uri = '/' . $pattern_document_root . '(.*)$/';
+
+preg_match_all($pattern_uri, __DIR__, $matches);
+$url_path = $url_host . $matches[1][0];
+$url_path = str_replace('\\', '/', $url_path);
 ?>
 <div class="type-171">
+<div class ="container">
     <div class="page-title">
         <div class="title_left">
             <h3>Projects <small>Listing design</small></h3>
@@ -25,7 +26,7 @@
     </div>
 
     <div class="clearfix"></div>
-    
+
     <div class="row">
         <div class="col-md-12">
             <div class="x_panel">
@@ -79,11 +80,11 @@
                                 </td>
                                 <td class="project_progress">
                                     <div class="progress progress_sm">
-                                        <div class="progress-bar progress-bar-success" 
-                                             role="progressbar" 
-                                             aria-valuenow="40" 
-                                             aria-valuemin="0" 
-                                             aria-valuemax="100" 
+                                        <div class="progress-bar progress-bar-success"
+                                             role="progressbar"
+                                             aria-valuenow="40"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100"
                                              v-bind:style="{width: project.process + '%'}">
 
                                         </div>
@@ -109,4 +110,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>

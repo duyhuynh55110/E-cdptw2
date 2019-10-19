@@ -1,7 +1,5 @@
 .type-157 {
   color: #73879c;
-  width: 90%;
-  margin-left: 5%;
   margin-top: 20px;
 }
 .type-157 .x_panel {
@@ -15,6 +13,9 @@
   opacity: 1;
   transition: all 0.2s ease;
   margin-bottom: 10px;
+}
+.type-157 .x_panel a:hover {
+  text-decoration: none;
 }
 .type-157 .x_panel .x_title {
   margin-bottom: 10px;
@@ -111,26 +112,8 @@
   color: #5a738e;
 }
 .type-157 .x_panel .x_content .media .media-body a:hover {
-  text-decoration: none;
   color: #2a5583;
 }
 .type-157 .x_panel .x_content .media:first-child {
   margin-top: 0;
-}
-@media only screen and (max-width: 769px) {
-  .type-157 .x_panel {
-    width: 105% !important;
-    margin-left: -5%;
-  }
-}
-@media only screen and (max-width: 1025px) {
-  .type-157 .x_panel {
-    width: 105% !important;
-    margin-left: -11%;
-  }
-}
-@media only screen and (max-width: 1445) {
-  .type-157 .container {
-    width: 100%;
-  }
 }

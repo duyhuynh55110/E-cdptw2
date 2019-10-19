@@ -222,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-6">
+            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-6 col-sm-offset-6">
                 <div class="x_panel">
                     <div class="x_title">
                         <h2><i class="fa fa-square-o"></i> Modals</h2>
@@ -366,7 +366,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Pop Overs <small>Sessions</small></h2>
@@ -416,7 +416,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
                         <h2><i class="fa fa-align-left"></i> Progress bar<small>Sessions</small></h2>
@@ -589,7 +589,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
@@ -644,8 +643,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Daily active users <small>Sessions</small></h2>

@@ -235,3 +235,42 @@
 .type-151 .progress_summary .progress.progress_sm .progress-bar {
   height: 10px !important;
 }
+@media only screen and (max-width: 769px) and (min-width: 427px) {
+  .type-151 .container {
+    width: 100%;
+  }
+  .type-151 .container .x_content .progress {
+    height: 10px;
+  }
+  .type-151 .container .x_content table.tile_info td p {
+    padding-right: 13px;
+    width: 102%;
+    margin: 0;
+    line-height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px !important;
+  }
+  .type-151 .container .x_content .P_left {
+    margin: 0 0 10px;
+    margin-left: -20px;
+  }
+  .type-151 .container .x_content .P_left1 {
+    margin-left: 13px;
+  }
+  .type-151 .container .x_content .widget_summary .w_right span {
+    font-size: 13px;
+  }
+  .type-151 .container .x_title h2 {
+    font-size: 17px !important;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .type-151 .container {
+    width: 100%;
+  }
+  .type-151 .container .x_content {
+    padding: 0px;
+  }
+}

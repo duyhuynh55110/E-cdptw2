@@ -1,8 +1,7 @@
 @import "../var/var.less";
 
 .type-160 {
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 100%;
 
   .admin-panel {
     width: 100%;
@@ -92,23 +91,22 @@
         display: @display;
       }
       .daily-weather {
-      .day{
+        .day {
           font-size: 14px;
-          border-top: 2px solid rgba(115,135,156,.36);
+          border-top: 2px solid rgba(115, 135, 156, 0.36);
           text-align: center;
-          border-bottom: 2px solid rgba(115,135,156,.36);
+          border-bottom: 2px solid rgba(115, 135, 156, 0.36);
           padding: 5px 0;
-          
+        }
       }
-    }
-      
+
       .degrees:after {
         content: "o";
         top: -12px;
-        font-size:@font-size;
+        font-size: @font-size;
         font-weight: 300;
         position: relative;
-    }
+      }
       .info-progress {
         color: @color;
         #chartColumnContainer {
@@ -174,8 +172,17 @@
 .highcharts-credits {
   display: none !important;
 }
+
+@media (max-width: 321px) {
+  .contaiter {
+    width: 150% !important;
+    margin-left: -25%;
+  }
+}
+@media (max-width: 376px) and (min-width: 322px) {
+}
 @media only screen and (max-width: 414px) {
-  .type-11 {
+  .contaiter {
     margin-left: 0px;
     margin-right: 0px;
     .cham {
@@ -192,7 +199,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .type-11 {
+  .contaiter {
     margin-left: 0px;
     margin-right: 0px;
     .cham {
@@ -203,7 +210,7 @@
     }
     .admin-panel {
       width: 100%;
-     
+
       .admin-content {
         .h-3 {
           margin-left: 3% !important;
@@ -213,7 +220,7 @@
   }
 }
 @media only screen and (max-width: 1024px) {
-  .type-11 {
+  .contaiter {
     .cham {
       white-space: nowrap;
       text-overflow: ellipsis;
