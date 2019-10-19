@@ -1,0 +1,180 @@
+.type-155 .admin-panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  opacity: 1;
+  transition: all .2s ease;
+  margin-bottom: 10px;
+  position: relative;
+  margin-top: 10px;
+}
+.type-155 .admin-panel .admin-title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 5px 5px 6px !important;
+}
+.type-155 .admin-panel .admin-title span,
+.type-155 .admin-panel .admin-title .fa {
+  color: #BAB8B8;
+}
+.type-155 .admin-panel .admin-title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  font-size: 20px;
+  color: #73879C;
+}
+.type-155 .admin-panel .admin-title h2 small {
+  line-height: 2.5em;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.type-155 .admin-panel .admin-title .filter-time {
+  font-size: 13px;
+}
+.type-155 .admin-panel .admin-title .filter-time .show-calendar {
+  float: right;
+  border: 1px solid #E6E9ED;
+  cursor: pointer;
+  padding: 4px 10px;
+  background-color: #fff;
+}
+.type-155 .admin-panel .admin-title .filter-time .show-calendar #datepicker {
+  border: none;
+  color: #73879C;
+  padding-left: 5px;
+}
+.type-155 .admin-panel .admin-content {
+  padding: 0 5px 6px;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+}
+.type-155 .admin-panel .admin-content #chartRainContainer {
+  height: 300px;
+  width: 100%;
+}
+.type-155 .admin-panel .admin-content .total-chart {
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: #73879C;
+}
+.type-155 .admin-panel .admin-content .total-chart h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.type-155 .admin-panel .admin-content .total-chart #chartCoalContainer2,
+.type-155 .admin-panel .admin-content .total-chart #chartCoalContainer3,
+.type-155 .admin-panel .admin-content .total-chart #chartCoalContainer4 {
+  height: 120px;
+}
+.type-155 .admin-panel .admin-content .total-chart span {
+  font-size: 17px;
+}
+.type-155 .admin-panel .admin-content .total-chart .col-chart {
+  padding: 11px 0;
+}
+.type-155 .admin-panel .admin-content .admin-title {
+  border-bottom: 2px solid #E6E9ED;
+}
+.type-155 .admin-panel .admin-content .admin-title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+}
+.type-155 .admin-panel .admin-content .admin-title .profile-user {
+  min-width: 70px;
+  float: right;
+  margin-right: 0;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+.type-155 .admin-panel .admin-content .admin-title .profile-user li {
+  float: left;
+  cursor: pointer;
+}
+.type-155 .admin-panel .admin-content .admin-title .profile-user li a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 13px;
+}
+.type-155 .admin-panel .admin-content .admin-title .profile-user li a:hover i {
+  color: #2e6da4;
+}
+.type-155 .admin-panel .admin-content .admin-title .collapse-link,
+.type-155 .admin-panel .admin-content .admin-title .close-link {
+  opacity: 1;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user {
+  padding-left: 0;
+  list-style: none;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li:nth-child(odd) {
+  background-color: #eee;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li {
+  margin-top: 5px;
+  padding: 2px;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li .profile-thumb {
+  border: 1px solid #9CC2CB !important;
+  width: 50px;
+  height: 50px;
+  margin: 5px 10px 5px 0;
+  border-radius: 50%;
+  padding: 9px 12px;
+  float: left;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li .profile-thumb i {
+  font-size: 30px;
+  color: #73879C;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li .profile-comment {
+  color: #5A738E;
+  display: table-cell;
+  vertical-align: top;
+  width: 10000px;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li .profile-comment a.title {
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li .profile-comment p {
+  margin-bottom: 0;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li .profile-comment p small {
+  font-size: 85%;
+}
+.type-155 .admin-panel .admin-content ul.profiles-user li .profile-comment p span {
+  white-space: nowrap;
+}
+.type-155 .admin-panel .dropdown-menu {
+  min-width: unset;
+}
+.type-155 .admin-panel .dropdown-menu li {
+  float: none !important;
+}
+.type-155 .admin-panel .highcharts-credits {
+  display: none;
+}
+@media (max-width: 480px) {
+  .type-155 .admin-panel .admin-title h2 small {
+    display: block;
+    margin-left: 0;
+  }
+  .type-155 .admin-panel .admin-title .filter-time .show-calendar {
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .type-155 .col-chart {
+    border-bottom: 1px solid #ccc;
+  }
+}
