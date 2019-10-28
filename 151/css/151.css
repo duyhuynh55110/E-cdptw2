@@ -10,8 +10,6 @@
   font-weight: 400;
   line-height: 1.471;
   margin-top: 100px;
-  width: 90%;
-  margin-left: 5%;
 }
 .type-151 a {
   text-decoration: none;
@@ -226,18 +224,18 @@
 .type-151 .red {
   color: #e74c3c;
 }
-.type-151 .progress_summary .progress .progress-bar {
-  position: absolute;
-  overflow: hidden;
-  line-height: 20px;
-}
-.type-151 .progress_summary .bg-green {
-  background: #1abb9c !important;
-  border: 1px solid #1abb9c !important;
+.type-151 .bg-green {
+  background: #1ABB9C !important;
+  border: 1px solid #1ABB9C !important;
   color: #fff;
 }
 .type-151 .progress_summary .progress {
   margin: 5px 0 12px !important;
+}
+.type-151 .progress_summary .progress .progress-bar {
+  position: absolute;
+  overflow: hidden;
+  line-height: 20px;
 }
 .type-151 .progress_summary .progress.progress_sm,
 .type-151 .progress_summary .progress.progress_sm .progress-bar {
