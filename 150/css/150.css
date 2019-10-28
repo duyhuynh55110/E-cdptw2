@@ -1,0 +1,84 @@
+.overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.type-150 {
+  color: #73879c;
+}
+.type-150 .dashboard_graph {
+  background: #fff;
+  padding: 7px 10px;
+}
+.type-150 .dashboard_graph .top {
+  margin-top: 5%;
+}
+.type-150 .dashboard_graph .x_title {
+  padding: 5px 5px 7px;
+  border-bottom: 2px solid #e6e9ed;
+  margin-bottom: 9px;
+}
+.type-150 .dashboard_graph .x_title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.type-150 .dashboard_graph .x_title p {
+  margin: 0 0 4px;
+}
+.type-150 .dashboard_graph .x_title .pull-right {
+  margin: 10px 0;
+}
+.type-150 .dashboard_graph .x_title .pull-right span {
+  color: #a4a5a5;
+}
+.type-150 .dashboard_graph .x_title h3 {
+  margin: 0;
+  font-weight: 400;
+}
+.type-150 .dashboard_graph .progress.progress_sm,
+.type-150 .dashboard_graph .progress.progress_sm .progress-bar {
+  height: 10px !important;
+  width: 95%;
+}
+.type-150 .dashboard_graph .bg-green {
+  background: #1ABB9C !important;
+  border: 1px solid #1ABB9C !important;
+  color: #fff;
+}
+.type-150 .dashboard_graph .bs-glyphicons li {
+  float: left;
+  width: 25%;
+  height: 115px;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #fff;
+}
+.type-150 .dashboard_graph .row-social {
+  margin-top: 5px;
+}
+.type-150 .dashboard_graph .row-social p {
+  margin: 0 0 5px;
+}
+@media only screen and (max-width: 321px) {
+  .type-150 .container {
+    width: 100%;
+  }
+  .type-150 .container .x_content {
+    padding: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .type-150 #reportrange {
+    float: none !important;
+  }
+}

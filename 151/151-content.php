@@ -1,5 +1,5 @@
-<div class="type-151">
-    <div class="container">
+<div class="container">
+    <div class="type-151">
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="x_panel tile fixed_height_320">
@@ -136,65 +136,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                        <table class="" style="width:100%">
-                            <tbody>
-                                <tr>
-                                    <th style="width:37%;">
-                                        <p>Top 5</p>
-                                    </th>
-                                    <th>
-                                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
-                                            <p class="">Device</p>
-                                        </div>
-                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                                            <p class="">Progress</p>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <canvas class="canvasDoughnut" height="140" width="140"
-                                            style="margin: 15px 10px 10px 0"></canvas>
-                                    </td>
-                                    <td>
-                                        <table class="tile_info">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p><i class="fa fa-square blue"></i>IOS </p>
-                                                    </td>
-                                                    <td>30%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p><i class="fa fa-square green"></i>Android </p>
-                                                    </td>
-                                                    <td>10%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p><i class="fa fa-square purple"></i>Blackberry </p>
-                                                    </td>
-                                                    <td>20%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p><i class="fa fa-square aero"></i>Symbian </p>
-                                                    </td>
-                                                    <td>15%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p><i class="fa fa-square red"></i>Others </p>
-                                                    </td>
-                                                    <td>30%</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        ab
                     </div>
                 </div>
             </div>
