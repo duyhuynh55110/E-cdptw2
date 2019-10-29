@@ -44,6 +44,7 @@ $less->compileFile('less/155.less', 'css/155.css');
 
 <!-- Bootstrap -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/vue.min.js"></script>
 <script src="js/155.js"></script>
 
 </html>

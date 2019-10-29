@@ -64,89 +64,27 @@
 
                             </div>
                             <ul class="profiles-user">
-                                <li>
+                                <li v-for="(user, i) in users" d
+                                    raggable="true" 
+                                    @dragstart="dragStart(i, $event)" 
+                                    @dragover.prevent 
+                                    @dragenter="dragEnter" 
+                                    @dragleave="dragLeave" 
+                                    @dragend="dragEnd" 
+                                    @drop="dragFinish(i, $event)">
                                     <a class="profile-thumb">
                                         <i class="fa fa-user"></i>
                                     </a>
                                     <div class="profile-comment">
                                         <a class="title" href="#">
-                                            Ms.Mary Jane
+                                            {{ user.name }}
                                         </a>
                                         <p>
-                                            <strong>$2300. </strong>
-                                            <span>Agent Avarage Sales</span>
+                                            <strong>${{ user.money }}. </strong>
+                                            <span>{{ user.note }}</span>
                                         </p>
                                         <p>
-                                            <small>12 Sales Today</small>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="profile-thumb">
-                                        <i class="fa fa-user"></i>
-                                    </a>
-                                    <div class="profile-comment">
-                                        <a class="title" href="#">
-                                            Ms.Mary Jane
-                                        </a>
-                                        <p>
-                                            <strong>$2300. </strong>
-                                            <span>Agent Avarage Sales</span>
-                                        </p>
-                                        <p>
-                                            <small>12 Sales Today</small>
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <a class="profile-thumb">
-                                        <i class="fa fa-user"></i>
-                                    </a>
-                                    <div class="profile-comment">
-                                        <a class="title" href="#">
-                                            Ms.Mary Jane
-                                        </a>
-                                        <p>
-                                            <strong>$2300. </strong>
-                                            <span>Agent Avarage Sales</span>
-                                        </p>
-                                        <p>
-                                            <small>12 Sales Today</small>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="profile-thumb">
-                                        <i class="fa fa-user"></i>
-                                    </a>
-                                    <div class="profile-comment">
-                                        <a class="title" href="#">
-                                            Ms.Mary Jane
-                                        </a>
-                                        <p>
-                                            <strong>$2300. </strong>
-                                            <span>Agent Avarage Sales</span>
-                                        </p>
-                                        <p>
-                                            <small>12 Sales Today</small>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="profile-thumb">
-                                        <i class="fa fa-user"></i>
-                                    </a>
-                                    <div class="profile-comment">
-                                        <a class="title" href="#">
-                                            Ms.Mary Jane
-                                        </a>
-                                        <p>
-                                            <strong>$2300. </strong>
-                                            <span>Agent Avarage Sales</span>
-                                        </p>
-                                        <p>
-                                            <small>12 Sales Today</small>
+                                            <small>{{ user.sales }} Sales Today</small>
                                         </p>
                                     </div>
                                 </li>
