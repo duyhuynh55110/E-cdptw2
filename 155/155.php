@@ -19,7 +19,7 @@ $less->compileFile('less/155.less', 'css/155.css');
 <html lang="en">
 
 <head>
-    <title>330</title>
+    <title>155</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -41,13 +41,9 @@ $less->compileFile('less/155.less', 'css/155.css');
 
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
+
 <!-- Bootstrap -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/chart-rain.js"></script>
-<script src="js/collapse-close.js"></script>
-<script src="js/datetimepicker.js"></script>
-<script src="js/highcharts.js"></script>
-<script src="js/jquery.min.js"></script>
 <script src="js/155.js"></script>
 
 </html>
