@@ -48,6 +48,9 @@
   color: #C5C7CB;
   font-size: 14px;
 }
+.type-165 .panel_toolbox >li >a:hover {
+  color: #2E6DA4;
+}
 .type-165 .navbar-right {
   margin-right: 0;
 }

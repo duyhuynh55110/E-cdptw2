@@ -24,6 +24,7 @@ $less->compileFile('less/155.less', 'css/155.css');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/155.css" rel="stylesheet" type="text/css" />
 
     <?php
@@ -39,11 +40,17 @@ $less->compileFile('less/155.less', 'css/155.css');
     <?php include './155-content.php'; ?>
 </body>
 
+
+<script src="js/google-chart.min.js"></script>
+
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 
 <!-- Bootstrap -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Vue -->
 <script src="js/vue.min.js"></script>
 <script src="js/155.js"></script>
 

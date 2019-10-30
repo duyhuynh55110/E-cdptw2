@@ -25,39 +25,12 @@
                             <h2>Top Campaign Performance</h2>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="row-social">
-                            <p>Facebook Campaign</p>
+                        <div v-for="social in socials" class="row-social">
+                            <p>{{ social.name }}</p>
                             <div class="">
                                 <div class="progress progress_sm">
                                     <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"
-                                    aria-valuenow="79" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-social">
-                            <p>Facebook Campaign</p>
-                            <div class="">
-                                <div class="progress progress_sm">
-                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"
-                                    aria-valuenow="79" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-social">
-                            <p>Facebook Campaign</p>
-                            <div class="">
-                                <div class="progress progress_sm">
-                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"
-                                    aria-valuenow="79" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-social">
-                            <p>Facebook Campaign</p>
-                            <div class="">
-                                <div class="progress progress_sm">
-                                    <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"
-                                    aria-valuenow="79" style="width: 80%;"></div>
+                                    aria-valuenow="79" v-bind:style="{width: social.process +'%'}"></div>
                                 </div>
                             </div>
                         </div>

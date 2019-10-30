@@ -5,8 +5,6 @@
   font-weight: 400;
   line-height: 1.471;
   margin-top: 100px;
-  width: 90%;
-  margin-left: 5%;
 }
 .type-159 a {
   text-decoration: none;
@@ -176,6 +174,7 @@
 .type-159 .x_panel .x_title .panel_toolbox li {
   float: left;
   cursor: pointer;
+  position: relative;
 }
 .type-159 .x_panel .x_title .panel_toolbox li a {
   padding: 5px;
@@ -183,7 +182,7 @@
   font-size: 14px;
 }
 .type-159 .x_panel .x_title .panel_toolbox li a:hover {
-  background: #f5f7fa;
+  color: #2E6DA4;
 }
 .type-159 .x_panel .x_title h2 {
   margin: 5px 0 6px;
@@ -191,14 +190,27 @@
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 500;
   font-family: inherit;
   line-height: 1.1;
   color: inherit;
 }
 .type-159 .x_panel .x_title h2 small {
   margin-left: 10px;
+}
+.type-159 .x_panel .x_title ul.dropdown-menu {
+  position: absolute;
+  top: 2em;
+  left: -1.5em;
+  min-width: 74px;
+  margin-right: 0;
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+.type-159 .x_panel .x_title ul.dropdown-menu li {
+  position: relative;
 }
 .type-159 .fixed_height_320 {
   height: 320px;
@@ -234,4 +246,11 @@
 .type-159 .progress_summary .progress.progress_sm,
 .type-159 .progress_summary .progress.progress_sm .progress-bar {
   height: 10px !important;
+}
+@media (max-width: 374px) {
+  .type-159 .x_panel .x_title h2 small {
+    margin-left: 0;
+    line-height: 25px;
+    display: block;
+  }
 }

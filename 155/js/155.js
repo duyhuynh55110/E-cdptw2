@@ -1,3 +1,38 @@
+
+var rainChart = new Vue({
+    el: "#chartRainContainer",
+    data: {
+        data: [
+                ['Year', 'Sales', 'Expenses'],
+                ['2013',  1000,    400],
+                ['2014',  1170,    460],
+                ['2015',  660,     1120],
+                ['2018',  1030,    540]
+          ],
+        options: {
+                title: 'Duy Company Performance',
+                hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+                vAxis: {minValue: 0}
+        }  
+    },
+    mounted() {
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(this.drawChart);
+    },
+    methods: {
+        drawChart() {
+              var data = google.visualization.arrayToDataTable(this.data);
+
+              var options = this.options;
+
+              var chart = new google.visualization.AreaChart(document.getElementById('chartRainContainer'));
+              chart.draw(data, options);
+        }
+    }
+});
+
+
+//Show list and drag with Vue Js
 var list = new Vue({
     el: ".profiles-user",
     data: {
@@ -11,12 +46,13 @@ var list = new Vue({
         ]
     },
     methods: {
+        //ng??i dùng b?t ??u drag
         dragStart(which, ev) {
             ev.dataTransfer.setData('Text', this.id);
             ev.dataTransfer.dropEffect = 'move'
             this.dragging = which;
         },
-        dragEnter(ev) {
+        dragEnter(ev) { 
           /* 
           if (ev.clientY > ev.target.height / 2) {
             ev.target.style.marginBottom = '10px'
@@ -31,15 +67,15 @@ var list = new Vue({
           ev.target.style.marginBottom = '2px'
           */
         },
-        dragEnd(ev) {
+        dragEnd(ev) {//xác ??nh là ?ã th? chu?t không drag n?a
           this.dragging = -1
         },
-        dragFinish(to, ev) {
+        dragFinish(to, ev) {//sau khi k?t thúc drag
           this.moveItem(this.dragging, to);
           ev.target.style.marginTop = '2px'
           ev.target.style.marginBottom = '2px'
         },
-        moveItem(from, to) {
+        moveItem(from, to) {//di chuy?n sang v? trí m?i
           if (to === -1) {
             this.removeItemAt(from);
           } else {
@@ -49,8 +85,39 @@ var list = new Vue({
     },
     computed: {
         isDragging() {
-          return this.dragging > -1
+          return this.dragging > -1;
         }
      },
-})
+});
+
+$(document).ready(function(){
+        $("#close-link").click(function(){
+            $(".left-155").toggle();
+            
+        });
+        
+        $(".collapse-link").on("click", function () {
+            var a = $(this).closest(".admin-panel"),
+                    b = $(this).find("i"),
+                    c = a.find(".profiles-user");
+            a.attr("style") ? c.slideToggle(200, function () {
+                a.removeAttr("style")
+            }) : (c.slideToggle(200), a.css("height", "auto")), b.toggleClass("fa-chevron-up fa-chevron-down")
+        }), $(".close-link").click(function () {
+            var a = $(this).closest(".left-155");
+            a.remove()
+        });
+    });
+    
+//show daterangepicker
+$.datepicker.setDefaults(
+    $.extend($.datepicker.regional[''])
+);
+
+$('#datepicker').datepicker();
+    
+
+
+
+
 
