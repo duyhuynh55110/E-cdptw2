@@ -182,7 +182,6 @@
 .type-151 .x_panel .x_title .panel_toolbox li {
   float: left;
   cursor: pointer;
-  position: relative;
 }
 .type-151 .x_panel .x_title .panel_toolbox li a {
   padding: 5px;
@@ -190,7 +189,7 @@
   font-size: 14px;
 }
 .type-151 .x_panel .x_title .panel_toolbox li a:hover {
-  color: #2E6DA4;
+  background: #f5f7fa;
 }
 .type-151 .x_panel .x_title h2 {
   margin: 5px 0 6px;
@@ -206,19 +205,6 @@
 }
 .type-151 .x_panel .x_title h2 small {
   margin-left: 10px;
-}
-.type-151 .x_panel ul.dropdown-menu {
-  position: absolute;
-  top: 2em;
-  left: -1.5em;
-  min-width: 74px;
-  margin-right: 0;
-  float: right;
-  list-style: none;
-  margin-top: 5px;
-}
-.type-151 .x_panel ul.dropdown-menu li {
-  position: relative;
 }
 .type-151 .fixed_height_320 {
   height: 320px;
@@ -254,9 +240,4 @@
 .type-151 .progress_summary .progress.progress_sm,
 .type-151 .progress_summary .progress.progress_sm .progress-bar {
   height: 10px !important;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .type-151 .x_panel .x_title h2 {
-    font-size: 15px;
-  }
 }

@@ -1,6 +1,3 @@
-@color_2E6DA4: #2E6DA4;
-
-
 .overflow{
     text-overflow: ellipsis;
     overflow: hidden;
@@ -193,15 +190,12 @@
         li {
           float: left;
           cursor: pointer;
-          position: relative;
-          
           a {
             padding: 5px;
             color: #c5c7cb;
             font-size: 14px;
-
-            &:hover{
-              color: @color_2E6DA4;
+            &:hover {
+              background: #f5f7fa;
             }
           }
         }
@@ -222,22 +216,7 @@
         }
       }
     }
-    ul.dropdown-menu{
-        position: absolute;
-        top: 2em;
-        left: -1.5em;
-        min-width: 74px;
-        margin-right: 0;
-        float: right;
-        list-style: none;
-        margin-top: 5px;
-
-        li{
-            position: relative;
-        }
-    }
   }
-
   .fixed_height_320 {
     height: 320px;
   }
@@ -282,11 +261,5 @@
     .progress.progress_sm .progress-bar {
       height: 10px !important;
     }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px){
-  .type-151 .x_panel .x_title h2{
-      font-size: 15px;
   }
 }

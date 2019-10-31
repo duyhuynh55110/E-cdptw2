@@ -47,6 +47,7 @@
 }
 .type-155 .admin-panel .admin-content {
   padding: 0 5px 6px;
+  float: left;
   clear: both;
   margin-top: 5px;
 }
@@ -74,7 +75,7 @@
   font-size: 17px;
 }
 .type-155 .admin-panel .admin-content .total-chart .col-chart {
-  margin-top: 10px;
+  padding: 11px 0;
 }
 .type-155 .admin-panel .admin-content .admin-title {
   border-bottom: 2px solid #E6E9ED;

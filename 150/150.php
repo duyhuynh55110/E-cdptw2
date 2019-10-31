@@ -27,17 +27,15 @@
     <link href="<?php echo $url_path ?>/css/font-awesome-v4.6.3.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/bootstrap-v3.3.6.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/150.css" rel="stylesheet" type="text/css" />
-
     <script src="<?php echo $url_path ?>/js/jquery-v2.2.4.min.js"></script>
     <script src="<?php echo $url_path ?>/js/bootstrap-v3.3.2.min.js"></script>
-    
+ 
+   
 </head>
 
 <body>
     <?php include $dir_block.'/150-content.php'; ?>
-    
-    <script type="text/javascript" src="js/vue.min.js"></script>
-    <script type="text/javascript" src="js/150.js"></script>
+
 </body>
 
 </html>

@@ -25,18 +25,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="<?php echo $url_path ?>/css/bootstrap-v3.3.6.min.css" rel="stylesheet" />
-    <link href="<?php echo $url_path ?>/css/font-awesome-v4.6.3.min.css" rel="stylesheet" />
+    <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet" />
     <link href="<?php echo $url_path ?>/css/159.css" rel="stylesheet" />
 
 
-    <script src="<?php echo $url_path ?>/js/jquery-v2.2.4.min.js"></script>
-    <script src="<?php echo $url_path ?>/js/bootstrap-v3.3.2.min.js"></script>
+    <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js"></script>
+    <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
+    
     
 </head>
 
 <body>
     <?php include $dir_block.'/159-content.php'; ?>
-    <script src="<?php echo $url_path ?>/js/159.js"></script>
 </body>
+<script src="<?php echo $url_path ?>/js/custom.min.js"></script>
 </html>
