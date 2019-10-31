@@ -1,7 +1,8 @@
 @font-size: 13px;
 @background-color: #fff;
 @color: #73879C;
-
+@color_open: #4285f4;
+@color_create: #00c851;
 @border-color: #E6E9ED;
 @border-chart: 1px solid #ccc;
 
@@ -65,7 +66,6 @@
         }
         .admin-content {
             padding: 0 5px 6px;
-            float: left;
             clear: both;
             margin-top: 5px;
 
@@ -190,6 +190,22 @@
         .highcharts-credits{
             display: none;
            }
+
+         //Button open div
+         .my-btn{
+           margin-top: @margin;
+           width: 100%;
+           background-color: transparent!important;
+         }
+         #create{
+            color: @color_create !important;
+            border: 2px solid @color_create !important;
+         }
+         #open{
+            display: none;
+            color: @color_open !important;
+            border: 2px solid @color_open !important;
+         }
     }
 
     /*----------REPONSIVE-------------*/

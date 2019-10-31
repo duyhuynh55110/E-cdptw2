@@ -1,10 +1,26 @@
+@color_2E6DA4: #2E6DA4;
+@color_fff: #fff;
+
+@margin_1: 10px;
+@margin_chart_425: 42px;
+
+@percent: 100%;
+
+@hover: #14ab8e; //hover process bar
+
 .overflow{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-
-
+.column_break{
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+}
+.float-left{
+    float: left;
+    text-align: left;
+}
 .type-151 {
   color: #73879c;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
@@ -19,65 +35,38 @@
     list-style: none;
   }
   .x_panel {
-    width: 100%;
-    padding: 10px 17px;
+    width: @percent;
+    padding: @margin_1 17px;
     display: inline-block;
-    background: #fff;
+    background: @color_fff;
     border: 1px solid #e6e9ed;
-    -webkit-column-break-inside: avoid;
-    -moz-column-break-inside: avoid;
     opacity: 1;
     transition: all 0.2s ease;
-    margin-bottom: 10px;
+    margin-bottom: @margin_1;
     position: relative;
+    .column_break;
+    
     .x_content {
       position: relative;
-      width: 100%;
+      width: @percent;
       padding: 0 5px 6px;
       float: left;
       clear: both;
       margin-top: 5px;
-      .weather-days .col-sm-2 {
-        width: 16.66666667%;
 
-        .daily-weather {
-          .day {
-            font-size: 14px;
-            border-top: 2px solid rgba(115, 135, 156, 0.36);
-            text-align: center;
-            border-bottom: 2px solid rgba(115, 135, 156, 0.36);
-            padding: 5px 0;
-          }
-          h3.degrees {
-            font-size: 22px;
-            font-weight: 400;
-            text-align: center;
-          }
-        }
-      }
-      .weather-text {
-        h2 {
-          font-size: 18px !important;
-          font-weight: 400 !important;
-        }
-      }
-      h4 {
-        font-size: 16px;
-        font-weight: 500;
-      }
       .dashboard-widget-content {
         padding-top: 9px;
         .sidebar-widget {
           width: 50%;
           display: inline-block;
           vertical-align: top;
-          background: #fff;
+          background: @color_fff;
           border: 1px solid #abd9ea;
           border-radius: 5px;
           text-align: center;
           float: right;
           padding: 2px;
-          margin-top: 10px;
+          margin-top: @margin_1;
         }
         ul.quick-list {
           width: 45%;
@@ -85,7 +74,7 @@
           display: inline-block;
 
           li {
-            padding-left: 10px;
+            padding-left: @margin_1;
             list-style: none;
             margin: 0;
             padding-bottom: 6px;
@@ -96,47 +85,14 @@
               color: #5a738e;
             }
             i {
-              padding-right: 10px;
+              padding-right: @margin_1;
               color: #757679;
             }
           }
         }
       }
-      table.tile_info td {
-        text-align: left;
-        padding: 1px;
-        font-size: 15px;
-        i {
-          margin-right: 8px;
-          font-size: 17px;
-          float: left;
-          width: 18px;
-          line-height: 28px;
-        }
-        p {
-          padding-right: 30px;
-          width: 100%;
-          margin: 0;
-          line-height: 28px;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          i {
-            margin-right: 8px;
-            font-size: 17px;
-            float: left;
-            width: 18px;
-            line-height: 28px;
-          }
-        }
-      }
-
-      ul.user_data li .progress {
-        width: 90%;
-      }
-
       .widget_summary {
-        width: 100%;
+        width: @percent;
         display: -ms-inline-flexbox;
         display: inline-flex;
         .w_20 {
@@ -190,12 +146,15 @@
         li {
           float: left;
           cursor: pointer;
+          position: relative;
+          
           a {
             padding: 5px;
             color: #c5c7cb;
             font-size: 14px;
-            &:hover {
-              background: #f5f7fa;
+
+            &:hover{
+              color: @color_2E6DA4;
             }
           }
         }
@@ -212,54 +171,57 @@
         line-height: 1.1;
         color: inherit;
         small {
-          margin-left: 10px;
+          margin-left: @margin_1;
         }
       }
     }
+    ul.dropdown-menu{
+        position: absolute;
+        top: 2em;
+        left: -1.5em;
+        min-width: 74px;
+        margin-right: 0;
+        float: right;
+        list-style: none;
+        margin-top: 5px;
+
+        li{
+            position: relative;
+        }
+    }
   }
+
   .fixed_height_320 {
     height: 320px;
   }
 
-  .blue {
-    color: #3498db;
+  .progress{
+      .bg-green {
+            background: #1ABB9C;
+            border: 1px solid #1ABB9C;
+            color: @color_fff;
+      }
+      &:hover {
+          .bg-green {
+              background: @hover !important;
+          }
+      }
   }
-
-  .green {
-    color: #1abb9c;
+  
+  
+  #myChart{
+      margin: @margin_chart_425 0;
   }
-
-  .purple {
-    color: #9b59b6;
-  }
-
-  .aero {
-    color: #9cc2cb;
-  }
-
-  .red {
-    color: #e74c3c;
-  }
-  .bg-green {
-    background: #1ABB9C!important;
-    border: 1px solid #1ABB9C!important;
-    color: #fff;
 }
 
-  .progress_summary {
-      .progress {
-        margin: 5px 0 12px !important;
-        .progress-bar {
-          position: absolute;
-          overflow: hidden;
-          line-height: 20px;
-        }
-       
-    }
-    
-    .progress.progress_sm,
-    .progress.progress_sm .progress-bar {
-      height: 10px !important;
-    }
+@media (min-width: 768px) and (max-width: 992px){
+  .type-151 .x_panel .x_title h2{
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 425px){
+  .type-151 #myChart{
+      margin: 52px 0px;
   }
 }

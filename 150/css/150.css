@@ -69,16 +69,33 @@
 .type-150 .dashboard_graph .row-social p {
   margin: 0 0 5px;
 }
+.type-150 .dashboard_graph .filter-time {
+  font-size: ;
+}
+.type-150 .dashboard_graph .filter-time .show-calendar {
+  float: right;
+  border: 1px solid #E6E9ED;
+  cursor: pointer;
+  padding: 4px 10px;
+  background-color: #fff;
+}
+.type-150 .dashboard_graph .filter-time .show-calendar #datepicker {
+  border: none;
+  color: #73879c;
+  padding-left: 5px;
+}
 @media only screen and (max-width: 321px) {
-  .type-150 .container {
+  .container {
     width: 100%;
   }
-  .type-150 .container .x_content {
+  .container .x_content {
     padding: 0px;
   }
 }
 @media (max-width: 767px) {
-  .type-150 #reportrange {
-    float: none !important;
+  .type-150 .dashboard_graph .filter-time .show-calendar {
+    float: none;
+    display: table;
+    margin: 0 auto;
   }
 }

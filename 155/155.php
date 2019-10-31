@@ -1,50 +1,35 @@
-<?php
-$url_host = 'http://' . $_SERVER['HTTP_HOST'];
-$pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
-$pattern_uri = '/' . $pattern_document_root . '(.*)$/';
-
-preg_match_all($pattern_uri, __DIR__, $matches);
-$url_path = $url_host . $matches[1][0];
-$url_path = str_replace('\\', '/', $url_path);
-
-if (!class_exists('lessc')) {
-    $dir_block = dirname($_SERVER['SCRIPT_FILENAME']);
-    require_once($dir_block . '/libs/lessc.inc.php');
-}
-
-$less = new lessc;
-$less->compileFile('less/155.less', 'css/155.css');
-?>
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <title>155</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/css/155.css" rel="stylesheet" type="text/css" />
+        <title>Module - Content e-commerce</title>
 
-    <?php
-    if (!class_exists('lessc')) {
-        include('./libs/lessc.inc.php');
-    }
-    $less = new lessc;
-    $less->compileFile('less/155.less', 'css/155.css');
-    ?>
-</head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
 
-<body>
-    <?php include './155-content.php'; ?>
-</body>
+        <?php
+        if (!class_exists('lessc')) {
+            include ('./libs/lessc.inc.php');
+        }
+        $less = new lessc;
+        $less->compileFile('less/155.less', 'css/155.css');
+        ?>
+        <link rel="stylesheet" href="css/155.css">
 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+        <script src="js/vue.min.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/155.js"></script>
+    </head>
 
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/vue.min.js"></script>
-<script src="js/155.js"></script>
-
+    <body>
+        <?php include '155-content.php'; ?>
+    </body>
 </html>

@@ -1,76 +1,103 @@
-@margin-top: 5px;
+  //color style
+  @color_type150: #73879c;
+  @color_fff: #fff;
 
-.overflow{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
+  //background color
+  @border-color: #E6E9ED;
+  @background_color1: #1ABB9C;
+  //padding and margin
+  @margin: 10px;
+  @margin-top: 5px;
 
-.type-150 {
-  color: #73879c;
-  .dashboard_graph {
-    background: #fff;
-    padding: 7px 10px;
-    .top {
-      margin-top: 5%;
-    }
-    .x_title {
-      padding: 5px 5px 7px;
-      border-bottom: 2px solid #e6e9ed;
-      margin-bottom: 9px;
+  .overflow{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+  }
 
-      h2 {
-        margin: 5px 0 6px;
-        float: left;
-        display: block;
-        font-size: 18px;
-        font-weight: 400;
-        max-width: 100%;
-        .overflow;
+  .type-150 {
+     color: @color_type150;
+
+    .dashboard_graph {
+      background: @color_fff;
+      padding: 7px @margin;
+      .top {
+        margin-top: 5%;
       }
-      p {
-        margin: 0 0 4px;
-      }
-      .pull-right {
-        margin: 10px 0;
-        span {
-          color: rgb(164, 165, 165);
+      .x_title {
+        padding: @margin-top @margin-top 7px;
+        border-bottom: 2px solid #e6e9ed;
+        margin-bottom: 9px;
+
+        h2 {
+          margin: 5px 0 6px;
+          float: left;
+          display: block;
+          font-size: 18px;
+          font-weight: 400;
+          max-width: 100%;
+          .overflow;
+        }
+        p {
+          margin: 0 0 4px;
+        }
+        .pull-right {
+          margin: @margin 0;
+          span {
+            color: rgb(164, 165, 165);
+          }
+        }
+        h3 {
+          margin: 0;
+          font-weight: 400;
         }
       }
-      h3 {
-        margin: 0;
-        font-weight: 400;
-      }
+      .progress.progress_sm, .progress.progress_sm .progress-bar {
+        height: @margin!important;
+        width: 95%;
     }
-    .progress.progress_sm, .progress.progress_sm .progress-bar {
-      height: 10px!important;
-      width: 95%;
-  }
-  
-  .bg-green {
-    background: #1ABB9C!important;
-    border: 1px solid #1ABB9C!important;
-    color: #fff;
-}
+
+    .bg-green {
+      background: @background_color1 !important;
+      border: 1px solid @background_color1 !important;
+      color: @color_fff;
+    }
     .bs-glyphicons {
-      li {
-        float: left;
-        width: 25%;
-        height: 115px;
-        padding: 10px;
-        font-size: 10px;
-        line-height: 1.4;
-        text-align: center;
-        background-color: #f9f9f9;
-        border: 1px solid #fff;
+        li {
+          float: left;
+          width: 25%;
+          height: 115px;
+          padding: @margin;
+          font-size: @margin;
+          line-height: 1.4;
+          text-align: center;
+          background-color: #f9f9f9;
+          border: 1px solid #fff;
+        }
       }
-    }
     .row-social{
-      margin-top: @margin-top;
-      p{
-        margin: 0 0 @margin-top;
+        margin-top: @margin-top;
+        p{
+          margin: 0 0 @margin-top;
+        }
       }
-    }
+    .filter-time {
+        font-size: @font-size;
+        .show-calendar {
+              float: right;
+              border: 1px solid @border-color;
+              cursor: pointer;
+              padding: 4px 10px;
+              background-color: @color_fff;
+              #datepicker {
+                  border: none;
+                  color: @color_type150;
+                  padding-left: 5px;
+              }
+          }
+      }
+  }
+
   }
   @media only screen and (max-width: 321px) {
     .container {
@@ -81,8 +108,9 @@
     }
   }
   @media (max-width: 767px){
-    #reportrange{
-      float: none !important;
+    .type-150 .dashboard_graph .filter-time .show-calendar {
+        float: none;
+        display: table;
+        margin: 0 auto;
     }
   }
-}

@@ -3,6 +3,14 @@
   overflow: hidden;
   white-space: nowrap;
 }
+.column_break {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+}
+.float-left {
+  float: left;
+  text-align: left;
+}
 .type-151 {
   color: #73879c;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
@@ -23,12 +31,12 @@
   display: inline-block;
   background: #fff;
   border: 1px solid #e6e9ed;
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
   opacity: 1;
   transition: all 0.2s ease;
   margin-bottom: 10px;
   position: relative;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
 }
 .type-151 .x_panel .x_content {
   position: relative;
@@ -37,29 +45,6 @@
   float: left;
   clear: both;
   margin-top: 5px;
-}
-.type-151 .x_panel .x_content .weather-days .col-sm-2 {
-  width: 16.66666667%;
-}
-.type-151 .x_panel .x_content .weather-days .col-sm-2 .daily-weather .day {
-  font-size: 14px;
-  border-top: 2px solid rgba(115,135,156,0.36);
-  text-align: center;
-  border-bottom: 2px solid rgba(115,135,156,0.36);
-  padding: 5px 0;
-}
-.type-151 .x_panel .x_content .weather-days .col-sm-2 .daily-weather h3.degrees {
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-}
-.type-151 .x_panel .x_content .weather-text h2 {
-  font-size: 18px !important;
-  font-weight: 400 !important;
-}
-.type-151 .x_panel .x_content h4 {
-  font-size: 16px;
-  font-weight: 500;
 }
 .type-151 .x_panel .x_content .dashboard-widget-content {
   padding-top: 9px;
@@ -97,37 +82,6 @@
 .type-151 .x_panel .x_content .dashboard-widget-content ul.quick-list li i {
   padding-right: 10px;
   color: #757679;
-}
-.type-151 .x_panel .x_content table.tile_info td {
-  text-align: left;
-  padding: 1px;
-  font-size: 15px;
-}
-.type-151 .x_panel .x_content table.tile_info td i {
-  margin-right: 8px;
-  font-size: 17px;
-  float: left;
-  width: 18px;
-  line-height: 28px;
-}
-.type-151 .x_panel .x_content table.tile_info td p {
-  padding-right: 30px;
-  width: 100%;
-  margin: 0;
-  line-height: 28px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.type-151 .x_panel .x_content table.tile_info td p i {
-  margin-right: 8px;
-  font-size: 17px;
-  float: left;
-  width: 18px;
-  line-height: 28px;
-}
-.type-151 .x_panel .x_content ul.user_data li .progress {
-  width: 90%;
 }
 .type-151 .x_panel .x_content .widget_summary {
   width: 100%;
@@ -182,6 +136,7 @@
 .type-151 .x_panel .x_title .panel_toolbox li {
   float: left;
   cursor: pointer;
+  position: relative;
 }
 .type-151 .x_panel .x_title .panel_toolbox li a {
   padding: 5px;
@@ -189,7 +144,7 @@
   font-size: 14px;
 }
 .type-151 .x_panel .x_title .panel_toolbox li a:hover {
-  background: #f5f7fa;
+  color: #2E6DA4;
 }
 .type-151 .x_panel .x_title h2 {
   margin: 5px 0 6px;
@@ -206,38 +161,40 @@
 .type-151 .x_panel .x_title h2 small {
   margin-left: 10px;
 }
+.type-151 .x_panel ul.dropdown-menu {
+  position: absolute;
+  top: 2em;
+  left: -1.5em;
+  min-width: 74px;
+  margin-right: 0;
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+.type-151 .x_panel ul.dropdown-menu li {
+  position: relative;
+}
 .type-151 .fixed_height_320 {
   height: 320px;
 }
-.type-151 .blue {
-  color: #3498db;
-}
-.type-151 .green {
-  color: #1abb9c;
-}
-.type-151 .purple {
-  color: #9b59b6;
-}
-.type-151 .aero {
-  color: #9cc2cb;
-}
-.type-151 .red {
-  color: #e74c3c;
-}
-.type-151 .bg-green {
-  background: #1ABB9C !important;
-  border: 1px solid #1ABB9C !important;
+.type-151 .progress .bg-green {
+  background: #1ABB9C;
+  border: 1px solid #1ABB9C;
   color: #fff;
 }
-.type-151 .progress_summary .progress {
-  margin: 5px 0 12px !important;
+.type-151 .progress:hover .bg-green {
+  background: #14ab8e !important;
 }
-.type-151 .progress_summary .progress .progress-bar {
-  position: absolute;
-  overflow: hidden;
-  line-height: 20px;
+.type-151 #myChart {
+  margin: 42px 0;
 }
-.type-151 .progress_summary .progress.progress_sm,
-.type-151 .progress_summary .progress.progress_sm .progress-bar {
-  height: 10px !important;
+@media (min-width: 768px) and (max-width: 992px) {
+  .type-151 .x_panel .x_title h2 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .type-151 #myChart {
+    margin: 52px 0px;
+  }
 }

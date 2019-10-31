@@ -47,7 +47,6 @@
 }
 .type-155 .admin-panel .admin-content {
   padding: 0 5px 6px;
-  float: left;
   clear: both;
   margin-top: 5px;
 }
@@ -163,6 +162,20 @@
 }
 .type-155 .admin-panel .highcharts-credits {
   display: none;
+}
+.type-155 .admin-panel .my-btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent !important;
+}
+.type-155 .admin-panel #create {
+  color: #00c851 !important;
+  border: 2px solid #00c851 !important;
+}
+.type-155 .admin-panel #open {
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
 }
 @media (max-width: 480px) {
   .type-155 .admin-panel .admin-title h2 small {
