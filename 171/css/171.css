@@ -155,12 +155,11 @@ img.avatar {
   width: 32px;
 }
 @media (max-width: 2561px) {
-  .container.body {
-    width: 99%;
-    padding: 0;
-  }
   .list-inline {
-    width: 260px;
+    width: 210px;
+  }
+  .input-group {
+    margin-right: -20px;
   }
 }
 @media (max-width: 991px) {
@@ -213,27 +212,33 @@ img.avatar {
 @media (max-width: 426px) and (min-width: 377px) {
   .type-171 {
     margin-left: -18px;
-    width: 109% !important;
+    width: 127%;
   }
   .type-171 .top_search {
-    margin-right: -18px !important;
+    margin-right: -18px;
   }
   .type-171 img {
-    width: 30px !important;
-    height: 30px !important;
+    width: 30px;
+    height: 30px;
   }
   .type-171 .x_panel {
-    width: 104% !important;
+    width: 104%;
+  }
+  .type-171 .x_panel .list-inline {
+    width: 120px;
+  }
+  .type-171 .x_panel .progress {
+    width: 79px;
   }
   .type-171 .top_search .input-group {
     width: 100%;
-    margin-left: 10%;
+    margin-left: 17%;
   }
   .type-171 .btn-xs {
-    font-size: 6px !important;
+    font-size: 6px;
   }
   .type-171 .table {
-    width: 356px !important;
+    width: 356px;
   }
   .type-171 .table th,
   .type-171 .table td {
@@ -246,10 +251,16 @@ img.avatar {
 @media (max-width: 376px) and (min-width: 322px) {
   .type-171 {
     margin-left: -6%;
-    width: 111% !important;
+    width: 151%;
   }
   .type-171 .x_panel {
-    width: 107% !important;
+    width: 104.5%;
+  }
+  .type-171 .x_panel .list-inline {
+    width: 120px;
+  }
+  .type-171 .x_panel .progress {
+    width: 105px;
   }
   .type-171 .title_left {
     white-space: nowrap;
@@ -259,17 +270,17 @@ img.avatar {
   }
   .type-171 .top_search .input-group {
     width: 109%;
-    margin-left: 25%;
+    margin-left: 14%;
   }
   .type-171 img {
-    width: 30px !important;
-    height: 30px !important;
+    width: 30px;
+    height: 30px;
   }
   .type-171 .btn-xs {
-    font-size: 6px !important;
+    font-size: 6px;
   }
   .type-171 .table {
-    width: 319px !important;
+    width: 319px;
   }
   .type-171 .table th,
   .type-171 .table td {
@@ -282,19 +293,29 @@ img.avatar {
 @media (max-width: 321px) {
   .type-171 {
     margin-left: -14px;
-    width: 139% !important;
+    width: 139%;
+  }
+  .type-171 .title_left h3 {
+    font-size: 20px;
   }
   .type-171 .x_panel {
-    width: 103% !important;
+    width: 104%;
   }
   .type-171 .x_panel .list-inline {
-    width: 80px;
+    width: 60px;
+  }
+  .type-171 .x_panel .list-inline .avatar {
+    width: 20px;
+    height: 20px;
+  }
+  .type-171 .x_panel .progress {
+    width: 75px;
   }
   .type-171 .x_panel .btn-xs {
     font-size: 6px !important;
   }
   .type-171 .x_panel .table {
-    width: 319px !important;
+    width: 319px;
   }
   .type-171 .x_panel .table th,
   .type-171 .x_panel .table td {
@@ -304,7 +325,13 @@ img.avatar {
     font-size: 11px;
   }
   .type-171 .top_search .input-group {
-    width: 100% !important;
-    margin-left: 13% !important;
+    width: 100%;
+    margin-left: 20%;
+  }
+  .type-171 .top_search .input-group .form-control {
+    height: 29px;
+  }
+  .type-171 .top_search .input-group .btn-default {
+    height: 29px;
   }
 }

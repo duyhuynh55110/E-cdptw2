@@ -1,13 +1,4 @@
-// Color variables (appears count calculates by raw css)
-@color0: #ffffff; // Appears 5 times
-@color1: #2a3f54; // Appears 2 times
-@color2: #f7f7f7; // Appears 2 times
-@color3: #e6e9ed; // Appears 2 times
-@color4: #169f85; // Appears 2 times
-
-// Width variables (appears count calculates by raw css)
-@width0: 100%; // Appears 4 times
-@width5: 55%; // Appears 2 times
+@import "../var/var.less";
 
 .type-171 {
   background: @color1;
@@ -131,7 +122,7 @@
           font-weight: 500;
         }
       }
-      
+
       .project_progress {
         .progress {
           margin-bottom: 3px !important;
@@ -182,7 +173,11 @@ img.avatar {
 }
 @media (max-width: 2561px) {
   .list-inline {
-    width: 260px;
+    width: 210px;
+  }
+  
+  .input-group {
+    margin-right: -20px;
   }
 }
 @media (max-width: 991px) {
@@ -240,28 +235,34 @@ img.avatar {
 @media (max-width: 426px) and (min-width: 377px) {
   .type-171 {
     margin-left: -18px;
-    width: 109% !important;
+    width: 127%;
     .top_search {
-      margin-right: -18px !important;
+      margin-right: -18px;
     }
     img {
-      width: 30px !important;
-      height: 30px !important;
+      width: 30px;
+      height: 30px;
     }
     .x_panel {
-      width: 104% !important;
+      width: 104%;
+      .list-inline {
+        width: 120px;
+      }
+      .progress {
+        width: 79px;
+      }
     }
     .top_search {
       .input-group {
         width: 100%;
-        margin-left: 10%;
+        margin-left: 17%;
       }
     }
     .btn-xs {
-      font-size: 6px !important;
+      font-size: 6px;
     }
     .table {
-      width: 356px !important ;
+      width: 356px;
       th,
       td {
         font-size: 9px;
@@ -275,9 +276,15 @@ img.avatar {
 @media (max-width: 376px) and (min-width: 322px) {
   .type-171 {
     margin-left: -6%;
-    width: 111% !important;
+    width: 151%;
     .x_panel {
-      width: 107% !important;
+      width: 104.5%;
+      .list-inline {
+        width: 120px;
+      }
+      .progress {
+        width: 105px;
+      }
     }
     .title_left {
       white-space: nowrap;
@@ -288,18 +295,18 @@ img.avatar {
     .top_search {
       .input-group {
         width: 109%;
-        margin-left: 25%;
+        margin-left: 14%;
       }
     }
     img {
-      width: 30px !important;
-      height: 30px !important;
+      width: 30px;
+      height: 30px;
     }
     .btn-xs {
-      font-size: 6px !important;
+      font-size: 6px;
     }
     .table {
-      width: 319px !important ;
+      width: 319px;
       th,
       td {
         font-size: 9px;
@@ -314,17 +321,29 @@ img.avatar {
 @media (max-width: 321px) {
   .type-171 {
     margin-left: -14px;
-    width: 139% !important;
+    width: 139%;
+    .title_left{
+      h3 {
+        font-size: 20px;
+    }
+    }
     .x_panel {
-      width: 103% !important;
+      width: 104%;
       .list-inline {
-        width: 80px;
+        width: 60px;
+        .avatar {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .progress {
+        width: 75px;
       }
       .btn-xs {
         font-size: 6px !important;
       }
       .table {
-        width: 319px !important ;
+        width: 319px;
         th,
         td {
           font-size: 9px;
@@ -335,8 +354,14 @@ img.avatar {
       }
     }
     .top_search .input-group {
-      width: 100% !important;
-      margin-left: 13% !important;
+      width: 100%;
+      margin-left: 20%;
+      .form-control{
+        height: 29px;
+      }
+      .btn-default{
+        height: 29px;
+      }
     }
   }
 }

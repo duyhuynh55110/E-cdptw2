@@ -21,7 +21,7 @@
 <html lang="en">
 
 <head>
-    <title>Module 160</title>
+    <title>Module 169</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,10 +31,12 @@
 
     <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js"></script>
     <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo $url_path ?>/js/169.js"></script>
 </head>
 
 <body>
 <?php include $dir_block.'/169-content.php'; ?>
 </body>
-
+  <script src="<?php echo $url_path ?>/js/jquery-ui.js"></script>
+ 
 </html>

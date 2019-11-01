@@ -38,7 +38,7 @@
     <script src="<?php echo $url_path ?>/js/init-script.js"></script>
     <script src="<?php echo $url_path ?>/js/jquery.jqGauges.min.js"></script>
     <script src="<?php echo $url_path ?>/js/highcharts.js"></script>
-    <script src="<?php echo $url_path ?>/js/collapse-close.js"></script>
+    <script src="<?php echo $url_path ?>/js/160.js"></script>
 </head>
 <body>
 <?php   include $dir_block.'/160-content.php'; ?>
