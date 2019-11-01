@@ -2,7 +2,7 @@
     $url_host = 'http://'.$_SERVER['HTTP_HOST'];
     $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
     $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
-    
+
     preg_match_all($pattern_uri, __DIR__, $matches);
     $url_path = $url_host . $matches[1][0];
     $url_path = str_replace('\\', '/', $url_path);
@@ -11,6 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
+                <button id="open" type="button" class="btn my-btn">Open</button>
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Text areas<small>Sessions</small></h2>
@@ -121,7 +122,7 @@
 
                         <!-- <div id="editor-one" class="editor-wrapper"></div> -->
                         <div id="editor-one" class="editor-wrapper placeholderText" contenteditable="true"><br></div>
-                    
+
 
                         <br />
 

@@ -188,6 +188,16 @@
 .type-151 #myChart {
   margin: 42px 0;
 }
+.type-151 .my-btn {
+  margin-top: ;
+  width: 100%;
+  background-color: transparent !important;
+}
+.type-151 .btn-open {
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
 @media (min-width: 768px) and (max-width: 992px) {
   .type-151 .x_panel .x_title h2 {
     font-size: 15px;

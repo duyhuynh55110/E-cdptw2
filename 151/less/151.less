@@ -1,5 +1,6 @@
 @color_2E6DA4: #2E6DA4;
 @color_fff: #fff;
+@color_open: #4285f4;
 
 @margin_1: 10px;
 @margin_chart_425: 42px;
@@ -45,7 +46,7 @@
     margin-bottom: @margin_1;
     position: relative;
     .column_break;
-    
+
     .x_content {
       position: relative;
       width: @percent;
@@ -147,7 +148,7 @@
           float: left;
           cursor: pointer;
           position: relative;
-          
+
           a {
             padding: 5px;
             color: #c5c7cb;
@@ -207,10 +208,21 @@
           }
       }
   }
-  
-  
+
+
   #myChart{
       margin: @margin_chart_425 0;
+  }
+
+  .my-btn{
+    margin-top: @margin;
+    width: 100%;
+    background-color: transparent!important;
+  }
+  .btn-open{
+     display: none;
+     color: @color_open !important;
+     border: 2px solid @color_open !important;
   }
 }
 

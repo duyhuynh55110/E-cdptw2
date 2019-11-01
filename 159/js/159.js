@@ -14,7 +14,7 @@ $(document).ready(function(){
         a.hide();
         $('.btn-open').eq(index).show();
     });
-    $('#open').click(function () {
+    $('.btn-open').click(function () {
       var a = $(this).next(".x_panel");
       a.show();
       $(this).hide();
@@ -23,25 +23,27 @@ $(document).ready(function(){
 
 //Draw chart
 var app = new Vue ({
-    el: ".type-151",
+    el: ".type-159",
     data: {
-      labels: ['IOS', 'Android','Blackberry', 'Symbian','Others'],
-      values: [30, 10 , 20, 15, 30],
-      backgroundColors: [
-                '#3498db',
-                '#26b99a',
-                '#9b59b6',
-                '#9cc2cb',
-                '#e74c3c',
-      ],
+      pie: {
+        labels: ['IOS', 'Android','Blackberry', 'Symbian','Others'],
+        values: [30, 10 , 20, 15, 30],
+        backgroundColors: [
+                  '#26b99a',
+                  '#bdc3c7',
+                  '#9b59b6',
+                  '#455c73',
+                  '#3498db',
+        ],
+      },
       gauge: {
         labels: ["Red","Blue"],
-        values: [20, 190],
+        values: [0, 100],
         backgroundColors: [
-            "rgb(255, 99, 132)",
-            "rgb(54, 162, 235)",
-            "rgb(255, 205, 86)"
+            "#ff3547",
+            "#4285f4",
         ],
+        openModal: 'none',
       },
       progressBars: [
             {title: "Angular", value: "123", process: 70},
@@ -49,22 +51,31 @@ var app = new Vue ({
             {title: "Vue", value: "23", process: 30},
             {title: "jQuery", value: "3", process: 15},
             {title: "Untun", value: "1", process: 3},
-      ]
+      ],
+      table: {
+        columns: ["Name","Address"],
+        users: [
+          {name: "Truong Dung",address:"HCM"},
+          {name: "Tan Thuong",address:"HN"},
+          {name: "Van Nang",address:"Da Nang"},
+          {name: "Long Binh",address:"Hue"},
+        ]
+      }
     },
     mounted(){
           // Create chart
           var ctx = document.getElementById('myChart').getContext('2d');
           var myPieChart = new Chart(ctx, {
-              type: 'doughnut',
+              type: 'pie',
               data: {
-                  labels: this.labels,
+                  labels: this.pie.labels,
                   datasets: [{
-                      data: this.values,
-                      backgroundColor: this.backgroundColors,
+                      data: this.pie.values,
+                      backgroundColor: this.pie.backgroundColors,
                       borderWidth: 1
                   }]
                       },
-               options: {
+              options: {
                     legend: {
                         display: true,
                         position: 'right',
@@ -94,10 +105,36 @@ var app = new Vue ({
           });
 
 
+          var timer = setInterval(
+            () => {
+              let temp = this.updateGaugeValue();//update this.gauge.values
+              gaugeChart.data.datasets[0].data = temp;
+              gaugeChart.update();
+
+              Vue.set(this.gauge.values,temp);
+
+          }, 1500)
     },
     methods: {
         changeValue: function(i){
             this.progressBars[i].process += 40;
+        },
+        updateGaugeValue: function(){
+          let value = 40;
+          var temp = this.gauge.values;
+
+          temp[0] += value;
+          temp[1] -= value;
+
+          //load complete
+          if(temp[0] >= 100){
+              temp[0] = 100;
+              temp[1] = 0;
+
+              this.gauge.openModal = 'block'
+              return temp;
+          }
+          return temp;
         }
     }
 });

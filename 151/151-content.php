@@ -2,6 +2,8 @@
         <div class="row">
         <div class="type-151">
             <div class="col-md-4 col-sm-6 col-xs-12">
+                <!--Open Block -->
+                <button type="button" class="btn-open btn my-btn">Open</button>
                 <div class="x_panel tile fixed_height_320">
                     <div class="x_title">
                         <h2>App Versions</h2>
@@ -46,6 +48,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
+                <button type="button" class="btn-open btn my-btn">Open</button>
                 <div class="x_panel tile fixed_height_320 overflow_hidden">
                     <div class="x_title">
                         <h2>Device Usage</h2>
@@ -73,6 +76,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
+              <button type="button" class="btn-open btn my-btn">Open</button>
                 <div class="x_panel tile fixed_height_320">
                     <div class="x_title">
                         <h2>Quick Settings</h2>
@@ -112,6 +116,7 @@
                             </ul>
                             <div class="sidebar-widget" id="app">
                                 <canvas class="chartjs-gauge"></canvas>
+                                <p>0 %</p>
                             </div>
                         </div>
                     </div>

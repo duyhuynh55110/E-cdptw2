@@ -3,6 +3,8 @@
 @color_3           : #5A738E;
 @color_4           : inherit;
 @color_5           : #555;
+@color_open: #4285f4;
+
 @background_color_1: #5bc0de;
 @background_color_2: transparent;
 @color             : #fff;
@@ -62,6 +64,18 @@
 		}
 	}
 
+	//Button open div
+	.my-btn{
+		margin-top: @margin;
+		width: 100%;
+		background-color: transparent!important;
+	}
+
+	#open{
+		 display: none;
+		 color: @color_open !important;
+		 border: 2px solid @color_open !important;
+	}
 	.panel_toolbox {
 		min-width: 70px;
 
@@ -185,7 +199,7 @@
 	:before {
 		box-sizing: border-box;
 	}
-	
+
 @media(max-width: 320px){
 	h2{
 	white-space: nowrap;
