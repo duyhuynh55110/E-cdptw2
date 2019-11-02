@@ -77,7 +77,7 @@
                                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
                                                 v-bind:style="{width: project.process + '%'}">
 
-                                            </div>
+                                            </div> 
                                         </div>
                                         <small>{{project.process}}% Complete</small>
                                     </td>

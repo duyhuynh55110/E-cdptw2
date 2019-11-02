@@ -34,60 +34,10 @@
 
                         <div class="col-md-12 info-progress">
 
-                            <div id="chartColumnContainer">
-                            </div>
-                            <div style="margin-top: 15px; margin-bottom: 10px;">
-                                <span>Escudor Wireless 1.0</span>
-                                <span>This sis</span>
-                            </div>
-                            <div class="col-xs-2">
-                                <span>SSD</span>
-                            </div>
-                            <div class="col-xs-8">
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 89%"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <span>89%</span>
-                            </div>
+                            <div id="chartColumnContainer"></div>
 
-
-                            <div style="margin-top: 15px; margin-bottom: 10px;">
-                                <span>Mobile Access</span>
-                                <span>Smart Phone</span>
+                            <div id="progress"></div>
                             </div>
-                            <div class="col-xs-2">
-                                <span>App</span>
-                            </div>
-                            <div class="col-xs-8">
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 79%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <span>79%</span>
-                            </div>
-
-
-                            <div>
-                                <span>WAN</span>
-                                <span>Total 69%</span>
-                            </div>
-                            <div class="col-xs-2">
-                                <span>Usr</span>
-                            </div>
-                            <div class="col-xs-8">
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 69%;"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <span>69%</span>
-                                <span>PC</span>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>

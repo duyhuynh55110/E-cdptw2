@@ -13,7 +13,7 @@ $(document).ready(function() {
             var a = $(this).closest(".x_panel");
             a.remove()
         })
-})
+});
 
 //Duy code - list column, sort column, process bar
 var table_projects = new Vue({
