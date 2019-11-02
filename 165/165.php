@@ -36,7 +36,6 @@
     <script src="<?php echo $url_path ?>/js/jquery-v2.2.4.min.js"></script>
     <script src="<?php echo $url_path ?>/js/bootstrap-v3.3.2.min.js"></script>
     <script src="<?php echo $url_path ?>/js/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">s</script>
     <script src="<?php echo $url_path ?>/js/165.js"></script>
 </body>
 
