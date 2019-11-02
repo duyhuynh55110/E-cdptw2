@@ -40,8 +40,10 @@
 .type-165 .x_panel .x_title h2 small {
   margin-left: 10px;
 }
+.type-165 .x_panel .x_title li>a:hove {
+  color: #000 !important;
+}
 .type-165 .my-btn {
-  margin-top: ;
   width: 100%;
   background-color: transparent !important;
 }
@@ -49,6 +51,22 @@
   display: none;
   color: #4285f4 !important;
   border: 2px solid #4285f4 !important;
+}
+.type-165 #add {
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
+.type-165 .my-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.type-165 .my-li {
+  display: block;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 2px;
+  margin-bottom: 7px;
 }
 .type-165 .panel_toolbox {
   min-width: 70px;

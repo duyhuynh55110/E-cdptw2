@@ -123,17 +123,21 @@
                         <!-- <div id="editor-one" class="editor-wrapper"></div> -->
                         <div id="editor-one" class="editor-wrapper placeholderText" contenteditable="true"><br></div>
 
-
                         <br />
 
                         <div class="ln_solid"></div>
-
                         <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Resizable Text area</label>
+                          <div class="row">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Resizable Text area </br><button id="add" type="button" class="btn my-btn" @click="addNew">Add</button> </label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                <textarea class="resizable_textarea form-control"
+                                <textarea v-model="message" class="resizable_textarea form-control"
                                     placeholder="This text area automatically resizes its height as you fill in more text courtesy of autosize-master it out..."></textarea>
+                                <ul class="my-list">
+                                    <li class="my-li">123</li>
+                                    <li v-for="(item,i) in list" class="my-li"><span>{{ icons[Math.floor((Math.random()*icons.length))] }}</span> {{item}}</li>
+                                </ul>
                             </div>
+                          </div>
                         </div>
                     </div>
                 </div>

@@ -61,21 +61,44 @@
 					margin-left: @mar-padd;
 				}
 			}
+
+			li>a{
+				&:hove{
+					color: #000 !important;
+				}
+			}
 		}
 	}
 
 	//Button open div
 	.my-btn{
-		margin-top: @margin;
 		width: 100%;
 		background-color: transparent!important;
 	}
-
 	#open{
-		 display: none;
-		 color: @color_open !important;
-		 border: 2px solid @color_open !important;
+		display: none;
+		color: @color_open !important;
+		border: 2px solid @color_open !important;
 	}
+	#add{
+		color: @color_open !important;
+		border: 2px solid @color_open !important;
+	}
+
+	//my list
+	.my-list{
+		list-style: none;
+		padding: 0;
+		margin-top: 10px;
+	}
+	.my-li{
+		display: block;
+		border: 1px solid;
+		padding: 5px;
+		border-radius: 2px;
+		margin-bottom: 7px;
+	}
+
 	.panel_toolbox {
 		min-width: 70px;
 
@@ -200,87 +223,87 @@
 		box-sizing: border-box;
 	}
 
-@media(max-width: 320px){
-	h2{
-	white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-	width: 156px;
+	@media(max-width: 320px){
+		h2{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			width: 156px;
+		}
+		.nav {
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style: none;
+			>li {
+				position: relative;
+				display: @display;
+			}
+		}
+		input[type=file]{
+			white-space: normal;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			width: 72px;
+		}
+
 	}
-	.nav {
-		padding-left: 0;
-		margin-bottom: 0;
-		list-style: none;
-		>li {
-			position: relative;
-			display: @display;
+	@media(max-width: 411px){
+		.nav {
+			padding-left: 233px;
 		}
 	}
-	input[type=file]{
-		white-space: normal;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		width: 72px;
+
+	@media(max-width: 320px){
+		h2{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			width: 156px;
+		}
+		.nav {
+			padding-left: 150px !important;
+		}
 	}
 
-}
-@media(max-width: 411px){
-	.nav {
-		padding-left: 233px;
+	@media(max-width: 375px){
+		h2{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			width: 156px;
+		}
+		.nav {
+			padding-left: 206px !important;
+		}
 	}
-}
 
-@media(max-width: 320px){
-	h2{
-	white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-	width: 156px;
+	@media(max-width: 414px){
+		.nav {
+			padding-left: 250px !important;
+		}
 	}
-	.nav {
-		padding-left: 150px !important;
-	}
-}
 
-@media(max-width: 375px){
-	h2{
-	white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-	width: 156px;
+	@media (max-width: 375px){
+		.nav {
+			padding-left: 205px !important;
+		}
 	}
-	.nav {
-		padding-left: 206px !important;
-	}
-}
 
-@media(max-width: 414px){
-	.nav {
-		padding-left: 250px !important;
+	@media(min-width: 320px){
+		.nav {
+			padding-left: 155px !important;
+		}
 	}
-}
 
-@media (max-width: 375px){
-	.nav {
-		padding-left: 205px !important;
+	@media (min-width: 375px){
+		.nav {
+			padding-left: 209px !important;
+		}
 	}
-}
 
-@media(min-width: 320px){
-	.nav {
-		padding-left: 155px !important;
+	@media (min-width:425px){
+		.nav {
+			padding-left: 258px !important;
+		}
 	}
-}
-
-@media (min-width: 375px){
-	.nav {
-		padding-left: 209px !important;
-	}
-}
-
-@media (min-width:425px){
-	.nav {
-		padding-left: 258px !important;
-	}
-}
 }
