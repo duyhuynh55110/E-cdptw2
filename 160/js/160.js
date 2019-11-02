@@ -31,67 +31,26 @@ var a = [{
         device: "Mobile"
     }
 ]
-
+mounted() {
+    this.timer = setInterval(() => {
+        a => (a.process = 25 + Math.floor(Math.random() * 75))
+    }, 2000)
+}
 
 
 var template = React.createElement("div", null, " ", React.createElement("div", {
     style: "margin-top: 15px; margin-bottom: 10px;"
-}, React.createElement("span", null, { a.title }), React.createElement("span", null, "This sis")), React.createElement("div", {
+}, React.createElement("span", null, "Escudor Wireless 1.0"), React.createElement("span", null, "This sis")), React.createElement("div", {
     className: "col-xs-2"
-}, React.createElement("span", null, { a.SSD })), React.createElement("div", {
+}, React.createElement("span", null, "SSD")), React.createElement("div", {
     className: "col-xs-8"
 }, React.createElement("div", {
     className: "progress"
 }, React.createElement("div", {
     className: "progress-bar",
-    style: "width: {a.process}+%"
+    style: "width: 89%"
 }))), React.createElement("div", {
     className: "col-xs-2"
-}, React.createElement("span", null, "{a.process}+%")));
+}, React.createElement("span", null, "89%")));
 
-var table_projects = new Vue({
-    el: ".type-171",
-    data: {
-        status: 'asc',
-        projects: [{
-                id: 1,
-                name: "Duy Project",
-                team_member: 4,
-                process: 17,
-                status: "success",
-                created_at: "04.01.2015"
-            },
-            {
-                id: 2,
-                name: "Trang Project",
-                team_member: 2,
-                process: 22,
-                status: "success",
-                created_at: "07.01.2015"
-            },
-            {
-                id: 3,
-                name: "Cong Project",
-                team_member: 12,
-                process: 32,
-                status: "success",
-                created_at: "01.01.2015"
-            },
-            {
-                id: 4,
-                name: "Thuy Project",
-                team_member: 5,
-                process: 32,
-                status: "success",
-                created_at: "01.01.2015"
-            },
-        ],
-        timer: null,
-        sortDirection: "DESC"
-    },
-    mounted() {
-        this.timer = setInterval(() => {
-            this.projects.forEach(project => (project.process = 25 + Math.floor(Math.random() * 75)))
-        }, 2000)
-    }
-})
+ReactDOM.render(template, document.getElementById("progress"));
