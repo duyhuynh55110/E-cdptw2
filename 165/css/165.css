@@ -61,10 +61,10 @@
   padding: 0;
   margin-top: 10px;
 }
-.type-165 .my-li {
+.type-165 .my-list .my-li {
   display: block;
   border: 1px solid;
-  padding: 5px;
+  padding: 5px 7px;
   border-radius: 2px;
   margin-bottom: 7px;
 }

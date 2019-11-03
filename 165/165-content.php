@@ -133,7 +133,7 @@
                                 <textarea id="inputMess" class="resizable_textarea form-control"
                                     placeholder="This text area automatically resizes its height as you fill in more text courtesy of autosize-master it out..."></textarea>
                                 <ul class="my-list">
-                                    <li v-for="(item,i) in list" class="my-li"><span>{{ randomIcon }}</span> {{item}}</li>
+                                    <li v-for="(item,i) in list" class="my-li"> {{item}} <span style="float:right" @click="removeItem(i)">x</span></li>
                                 </ul>
                             </div>
                           </div>

@@ -1,0 +1,215 @@
+.type-331 {
+  color: #73879C;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.471;
+  margin-top: 15px;
+}
+.type-331 .form-control {
+  margin-bottom: 10px;
+}
+.type-331 .my-btn {
+  width: 100%;
+  background-color: transparent !important;
+}
+.type-331 #open {
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
+.type-331 #create {
+  width: auto;
+  margin: 0 0 10px 15px;
+  color: #fff;
+  background-color: #3f51b5;
+}
+.type-331 #create:hover {
+  background-color: #293575;
+}
+.type-331 .delete-btn {
+  color: #fff;
+  background-color: #ff3547;
+}
+.type-331 .delete-btn:hover {
+  background-color: #cb1a2a;
+}
+.type-331 #export {
+  color: #fff;
+  background-color: #00c851;
+}
+.type-331 #export:hover {
+  background-color: #147d3f;
+}
+.type-331 small {
+  font-size: 12px;
+}
+.type-331 .page-title {
+  width: 100%;
+  height: 65px;
+  padding: 10px 0;
+}
+.type-331 .page-title .title_left {
+  width: 45%;
+  float: left;
+  display: block;
+}
+.type-331 .page-title .title_left h3 {
+  margin: 9px 0;
+}
+.type-331 .page-title .title_right {
+  width: 55%;
+  float: left;
+  display: block;
+}
+.type-331 .page-title .title_right .pull-right {
+  margin:  0;
+}
+.type-331 .h3 {
+  font-size: 24px;
+}
+.type-331 .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+.type-331 label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+.type-331 .dataTables_filter {
+  margin-left: 55%;
+}
+.type-331 .top_search {
+  padding: 0;
+}
+.type-331 .top_search .form-control {
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.075);
+  border-radius: 25px 0 0 25px;
+  padding-left: 20px;
+  border: 1px solid rgba(221,226,232,0.49);
+}
+.type-331 .top_search .input-group-btn button {
+  border-radius: 0 25px 25px 0;
+  border: 1px solid rgba(221,226,232,0.49);
+  border-left: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  color: #93A2B2;
+  margin-bottom: 0 !important;
+}
+.type-331 .pull-right {
+  float: right !important;
+}
+.type-331 .input-group {
+  margin-bottom: 10px;
+}
+.type-331 table {
+  text-align: center;
+  color: #212529;
+  border: 1px solid rgba(221,221,221,0.78);
+  cursor: pointer;
+  position: relative;
+}
+.type-331 table .title {
+  background: rgba(52,73,94,0.94);
+  color: #ECF0F1;
+}
+.type-331 table .title tr {
+  font-weight: 700;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.type-331 table .title tr td:hover {
+  color: #7ea3c7;
+}
+.type-331 table >tbody >tr >td {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.type-331 table.odd {
+  cursor: auto;
+}
+.type-331 .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.type-331 .x_panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  opacity: 1;
+  transition: all .2s ease;
+  margin-bottom: 10px;
+}
+.type-331 .x_title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+  margin-bottom: 10px;
+}
+.type-331 .x_title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+}
+.type-331 h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.type-331 .x_content {
+  height: auto;
+  overflow: hidden;
+  transition: height 2s;
+  -moz-transition: height 2s;
+  -webkit-transition: height 2s;
+  -o-transition: height 2s;
+}
+.type-331 .dropdown-menu >li >a {
+  display: block;
+  padding: 3px 20px;
+  clear: ;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: ;
+  white-space: nowrap;
+}
+.type-331 .panel_toolbox {
+  min-width: 70px;
+}
+.type-331 .panel_toolbox >li {
+  float: left;
+  cursor: pointer;
+}
+.type-331 .panel_toolbox >li >a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 14px;
+}
+.type-331 .navbar-right {
+  margin-right: 0;
+}
+.type-331 tbody >tr.mov >td {
+  padding: 9px 33px;
+}
+.type-331 .table >tbody >tr.mov >td {
+  cursor: auto;
+}
+.type-331 i.fa.fa-search {
+  border: 1px solid #ccc;
+  height: 30px;
+  padding-top: 6px;
+  cursor: pointer;
+  margin-left: -4px;
+  width: 28px;
+  text-align: center;
+  border-radius: 3px;
+}
+@media (max-width: 768px) {
+  .type-331 #create {
+    margin: 10px 0 0 0;
+    display: block;
+  }
+}

@@ -28,19 +28,18 @@ var type_165 = new Vue({
   el:".type-165",
   data: {
     list: [],
-    icons: ["🐱", "🐶", "🐼", "🦁", "🐸", "🐻", "🐹", "🐯", "🐵"],
   },
   methods: {
     addNew: function() {
       let string = document.getElementById('inputMess').value.trim();
       if(string != null && string != ''){
         this.list.unshift(string);
+      }else{
+          alert("You must input content before add !!!");
       }
     },
-  },
-  computed: {
-    randomIcon: function(){
-      return this.icons[Math.floor((Math.random() * this.icons.length))];
+    removeItem: function(i){
+        this.list.splice(i,1);
     }
-  }
+  },
 })
