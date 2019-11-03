@@ -36,6 +36,8 @@
 
                             <div id="chartColumnContainer">
                             </div>
+<div id= "progress"></div>
+
                             <div style="margin-top: 15px; margin-bottom: 10px;">
                                 <span>Escudor Wireless 1.0</span>
                                 <span>This sis</span>
@@ -45,7 +47,7 @@
                             </div>
                             <div class="col-xs-8">
                                 <div class="progress">
-                                    <div class="progress-bar" style="width: 89%"></div>
+                                    <div class="progress-bar" style="width: 0%"></div>
                                 </div>
                             </div>
                             <div class="col-xs-2">
@@ -62,7 +64,7 @@
                             </div>
                             <div class="col-xs-8">
                                 <div class="progress">
-                                    <div class="progress-bar" style="width: 79%;"></div>
+                                    <div class="progress-bar" style="width: 0%;"></div>
                                 </div>
                             </div>
                             <div class="col-xs-2">
@@ -79,7 +81,7 @@
                             </div>
                             <div class="col-xs-8">
                                 <div class="progress">
-                                    <div class="progress-bar" style="width: 69%;"></div>
+                                    <div class="progress-bar" style="width: 0%;"></div>
                                 </div>
                             </div>
                             <div class="col-xs-2">

@@ -32,13 +32,7 @@
 
     <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js"></script>
     <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
-    <script src="<?php echo $url_path ?>/js/chart.js"></script>
-    <script src="<?php echo $url_path ?>/js/script-gauge.js"></script>
-    <script src="<?php echo $url_path ?>/js/weather-icons.js"></script>
-    <script src="<?php echo $url_path ?>/js/init-script.js"></script>
-    <script src="<?php echo $url_path ?>/js/jquery.jqGauges.min.js"></script>
-    <script src="<?php echo $url_path ?>/js/highcharts.js"></script>
-    <script src="<?php echo $url_path ?>/js/collapse-close.js"></script>
+    <script src="<?php echo $url_path ?>/js/163.js"></script>
 </head>
 
 <body>
