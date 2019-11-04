@@ -417,7 +417,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
+                <div class="x_panel"  style="height: 712px;">
                     <div class="x_title">
                         <h2><i class="fa fa-align-left"></i> Progress bar<small>Sessions</small></h2>
                         <ul class="nav navbar-right panel_toolbox">
@@ -439,193 +439,223 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                    <p>Bootstrap progress bar with animated loading bar, add right to .progress to align right</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- Ngang trái -->
-                            
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-danger progress-bar-striped active"
-                                    role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:40%; float:right;">
-                                    40%
+                        <p>Bootstrap progress bar with animated loading bar, add right to .progress to align right</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Ngang trái -->
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger progress-bar-striped active"
+                                        role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width:40%; float:right;">
+                                        40%
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning progress-bar-striped active"
-                                    role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:60%; float:right;">
-                                    40%
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                                        role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width:60%; float:right;">
+                                        40%
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar"
-                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%; float:right;">
-                                    40%
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width:70%; float:right;">
+                                        40%
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-striped active"
-                                    role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:90%; float:right;">
-                                    40%
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                        role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width:90%; float:right;">
+                                        40%
+                                    </div>
                                 </div>
+                                <!-- end ngang trái -->
                             </div>
-                            <!-- end ngang trái -->
+                            <div class="col-md-6">
+                                <!-- Ngang phải -->
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger progress-bar-striped active"
+                                        role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width:40%">
+                                        40%
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                                        role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width:60%">
+                                        40%
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                        40%
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                        role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                        style="width:90%">
+                                        40%
+                                    </div>
+                                </div>
+                                <!-- end ngang phải -->
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <!-- Ngang phải -->
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-danger progress-bar-striped active"
-                                    role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:40%">
-                                    40%
-                                </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <ul class="verticle_bars list-inline">
+                                    <li>
+                                        <div class="progress progress1" style="left: 5%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-danger progress-bar-striped active" role="progressbar"
+                                                style="height: 40%; margin-top: 59px;" aria-valuenow="60"
+                                                aria-valuemin="0" aria-valuemax="100">40%
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="progress progress1" style="left: 30%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-warning progress-bar-striped active" role="progressbar"
+                                                style="height: 50%; margin-top: 49px;" aria-valuenow="60"
+                                                aria-valuemin="0" aria-valuemax="100">50%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress1" style="left: 55%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-striped active" role="progressbar"
+                                                style="height: 60%; margin-top: 39px;" aria-valuenow="60"
+                                                aria-valuemin="0" aria-valuemax="100">60%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress1" style="left: 80%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-success progress-bar-striped active" role="progressbar"
+                                                style="height: 70%" aria-valuenow="60" aria-valuemin="0"
+                                                aria-valuemax="100">70%
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning progress-bar-striped active"
-                                    role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:60%">
-                                    40%
-                                </div>
+                            <div class="col-md-6 col-sm-12 fixed_height_200">
+                                <ul class="verticle_bars list-inline">
+                                    <li>
+                                        <div class="progress progress2" style="left: 5%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-success progress-bar-striped active" role="progressbar"
+                                                style="height: 70%" aria-valuenow="60" aria-valuemin="0"
+                                                aria-valuemax="100">70%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress2" style="left: 30%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-striped active" role="progressbar"
+                                                style="height: 60% ; margin-top: 39px;" aria-valuenow="60"
+                                                aria-valuemin="0" aria-valuemax="100">60%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress2" style="left: 55%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-warning progress-bar-striped active" role="progressbar"
+                                                style="height: 50% ; margin-top: 49px;" aria-valuenow="60"
+                                                aria-valuemin="0" aria-valuemax="100">50%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress2" style="left: 80%;">
+                                            <div class=" progress-bar progress-bar1 bg-primary progress-bar-danger progress-bar-striped active" role="progressbar"
+                                                style="height: 40%; margin-top: 59px;" aria-valuenow="60"
+                                                aria-valuemin="0" aria-valuemax="100">40%
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped active" role="progressbar"
-                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                    40%
-                                </div>
+                        </div>
+                        <div class="row r1">
+                            <div class="col-md-6 col-sm-12">
+                                <ul class="verticle_bars list-inline">
+                                    <li>
+                                        <div class="progress progress1" style="left: 5%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-danger progress-bar-striped active" role="progressbar"
+                                                style="height: 40%;;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">40%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress1" style="left: 30%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-warning progress-bar-striped active" role="progressbar"
+                                                style="height: 50%;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">50%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress1" style="left: 55%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-striped active" role="progressbar"
+                                                style="height: 60%;;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">60%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress1" style="left: 80%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-success progress-bar-striped active" role="progressbar"
+                                                style="height: 70%;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">70%
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-striped active"
-                                    role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                    style="width:90%">
-                                    40%
-                                </div>
+                            <div class="col-md-6 col-sm-12 fixed_height_200">
+                                <ul class="verticle_bars list-inline">
+                                    <li>
+                                        <div class="progress progress2" style="left: 5%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-success progress-bar-striped active " role="progressbar"
+                                                style="height: 70%;;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">70%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress2" style="left: 30%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-striped active" role="progressbar"
+                                                style="height: 60%;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">60%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress2" style="left: 55%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-warning progress-bar-striped active" role="progressbar"
+                                                style="height: 50%;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">50%
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="progress progress2" style="left: 80%;">
+                                            <div class=" progress-bar progress-bar1 bg-danger progress-bar-danger progress-bar-striped active" role="progressbar"
+                                                style="height: 40%;margin-top: -59px;" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">40%
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- end ngang phải -->
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <ul class="verticle_bars list-inline">
-                                <li>
-                                    <div class="progress progress-striped vertical progress_wide bottom">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                            data-transitiongoal="25"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress progress-striped vertical progress_wide bottom">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar"
-                                            data-transitiongoal="45"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical progress_wide bottom">
-                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                            data-transitiongoal="65">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical progress_wide bottom">
-                                        <div class="progress-bar  progress-bar-success" role="progressbar"
-                                            data-transitiongoal="85"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-sm-12 fixed_height_200">
-                            <ul class="verticle_bars list-inline">
-                                <li>
-                                    <div class="progress vertical bottom">
-                                        <div class="progress-bar  progress-bar-success" role="progressbar"
-                                            data-transitiongoal="85"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical bottom">
-                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                            data-transitiongoal="65">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical bottom">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar"
-                                            data-transitiongoal="45"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical bottom">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                            data-transitiongoal="25"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <ul class="verticle_bars list-inline">
-                                <li>
-                                    <div class="progress vertical progress_wide">
-                                        <div class="progress-bar progress-bar-danger progress-bar-striped"
-                                            role="progressbar" data-transitiongoal="25"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical progress_wide">
-                                        <div class="progress-bar progress-bar-warning progress-bar-striped"
-                                            role="progressbar" data-transitiongoal="45"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical progress_wide">
-                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                            data-transitiongoal="65">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical progress_wide">
-                                        <div class="progress-bar  progress-bar-success" role="progressbar"
-                                            data-transitiongoal="85"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-sm-12 fixed_height_200">
-                            <ul class="verticle_bars list-inline">
-                                <li>
-                                    <div class="progress vertical">
-                                        <div class="progress-bar  progress-bar-success" role="progressbar"
-                                            data-transitiongoal="85"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical">
-                                        <div class="progress-bar progress-bar-info" role="progressbar"
-                                            data-transitiongoal="65">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar"
-                                            data-transitiongoal="45"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress vertical">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar"
-                                            data-transitiongoal="25"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
