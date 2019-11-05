@@ -30,15 +30,19 @@ $url_path = str_replace('\\', '/', $url_path);
                 </div>
             </div>
         </div>
+
+
         <div class="clearfix"></div>
 
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-12 show">
+            <button id="open" type="button" class="btn my-btn">Open</button>
             <div class="x_panel">
                 <div class="x_title">
                     <h2><i class="fa fa-bars"></i> Tabs <small>Float left</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-expanded="false"><i class="fa fa-wrench"></i></a>
@@ -49,14 +53,13 @@ $url_path = str_replace('\\', '/', $url_path);
                                 </li>
                             </ul>
                         </li>
+
                         <li><a class="close-link"><i class="fa fa-close"></i></a>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-
-
                     <div role="tabpanel" data-example-id="togglable-tabs">
                         <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab"
@@ -102,7 +105,7 @@ $url_path = str_replace('\\', '/', $url_path);
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-12 right">
             <div class="x_panel">
                 <div class="x_title">
                     <h2><i class="fa fa-bars"></i> Tabs <small>Float right</small></h2>
@@ -126,7 +129,7 @@ $url_path = str_replace('\\', '/', $url_path);
                 </div>
                 <div class="x_content">
 
-                    <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                    <div class="tab" role="tabpanel" data-example-id="togglable-tabs">
                         <ul id="myTab1" class="nav nav-tabs bar_tabs r" role="tablist">
                             <li role="presentation" class="active"><a href="#tab_content11" id="home-tabb" role="tab"
                                     data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a>
@@ -629,13 +632,3 @@ $url_path = str_replace('\\', '/', $url_path);
         </div>
     </div>
 </div>
-<div class="clearfix"></div>
-</div>
-<!-- footer content -->
-<footer>
-    <div class="pull-right">
-        Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-    </div>
-    <div class="clearfix"></div>
-</footer>
-<!-- /footer content -->

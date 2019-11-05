@@ -1,0 +1,124 @@
+@color_1   : #C5C7CB;
+@color_2   : #5A738E;
+@color_3   : #333;
+@color_4   : #aab6aa;
+@color_5   : #fff;
+@border    : #e6e9ed;
+@boder-left: #e8e8e8;
+@boder-1   : #d2d3d2;
+@backgroud : #f9f9f9;
+@float     : left;
+@display   : block;
+@font      : 14px;
+@clear     : both;
+@position  : relative;
+@w-h       : 14px;
+@m-p       : 5px;
+@font-while: 400;
+@width     : 100%;
+
+.type-156 {
+  margin: @m-p + 5;
+
+  .x_panel {
+    width        : @width;
+    padding      : 10px 17px;
+    display      : inline-block;
+    background   : @color_5;
+    border       : 1px solid @border;
+    opacity      : 1;
+    transition   : all .2s ease;
+    margin-bottom: @m-p + 5;
+    position     : @position;
+  }
+
+  .x_title {
+    border-bottom: 2px solid @border;
+    padding      : 1px 5px 6px;
+    margin-bottom: @m-p + 5;
+
+    h2 {
+      margin     : 5px 0 6px;
+      float      : @float;
+      display    : @display;
+      white-space: nowrap;
+      overflow   : hidden;
+      width      : @width - 33;
+
+      small {
+        margin-left: @m-p + 5;
+      }
+    }
+  }
+
+  .panel_toolbox {
+    float    : right;
+    min-width: 70px;
+
+    >li {
+      float : @float;
+      cursor: pointer;
+
+      >a {
+        padding  : @m-p;
+        color    : @color_1;
+        font-size: @font;
+      }
+    }
+  }
+
+  .navbar-right {
+    margin-right: 0;
+  }
+
+  h2 {
+    font-size  : @font + 4;
+    font-weight: @font-while;
+  }
+
+  .dropdown-menu>li>a {
+    display    : @display;
+    padding    : 3px 20px;
+    clear      : @clear;
+    font-weight: @font-while;
+    line-height: 1.42857143;
+    color      : @color_3;
+    white-space: nowrap;
+  }
+
+  .x_content {
+    padding   : 0 5px 6px;
+    float     : @float;
+    clear     : @clear;
+    margin-top: @m-p;
+    width     : @width;
+    position  : @position;
+
+    .row {
+      padding-bottom: @m-p;
+      margin-bottom : @m-p;
+    }
+
+    .col-md-7 {
+      overflow: hidden;
+    }
+  }
+
+  canvas#chartPie {
+    margin-left: @width - 22;
+    margin-top : @m-p + 25;
+  }
+
+  canvas#myChart {
+    display       : inline-block;
+    vertical-align: top;
+    width         : @width !important;
+    height: 15pc !important;
+  }
+
+  h4.pie {
+    padding-top: @m-p + 55;
+    padding-top: @m-p + 21;
+  }
+
+}

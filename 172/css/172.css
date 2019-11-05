@@ -1,0 +1,222 @@
+.type-172 {
+  color: #73879C;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.471;
+}
+.type-172 .col-md-12.col-sm-12.col-xs-12 {
+  margin-top: 40px;
+}
+.type-172 small {
+  font-size: 12px;
+}
+.type-172 .page-title {
+  width: 100%;
+  height: 65px;
+  padding: 10px 0;
+}
+.type-172 .page-title .title_left {
+  width: 45%;
+  float: left;
+  display: block;
+}
+.type-172 .page-title .title_left h3 {
+  margin: 9px 0;
+}
+.type-172 .page-title .title_right {
+  width: 55%;
+  float: left;
+  display: block;
+}
+.type-172 .page-title .title_right .pull-right {
+  margin: 10px 0;
+}
+.type-172 .h3 {
+  font-size: 24px;
+}
+.type-172 .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+.type-172 label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+.type-172 .dataTables_filter {
+  margin-left: 55%;
+}
+.type-172 .top_search {
+  padding: 0;
+}
+.type-172 .top_search .form-control {
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.075);
+  border-radius: 25px 0 0 25px;
+  padding-left: 20px;
+  border: 1px solid rgba(221,226,232,0.49);
+}
+.type-172 .top_search .input-group-btn button {
+  border-radius: 0 25px 25px 0 rgba(221,226,232,0.49);
+  border: 1px solid;
+  border-left: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  color: #93A2B2;
+  margin-bottom: 0 !important;
+}
+.type-172 .pull-right {
+  float: right !important;
+}
+.type-172 .input-group {
+  margin-bottom: 10px;
+}
+.type-172 table {
+  cursor: pointer;
+  position: relative;
+}
+.type-172 table >tbody >tr >td {
+  border: 1px solid #ddd;
+}
+.type-172 table.odd {
+  cursor: auto;
+}
+.type-172 .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.type-172 .x_panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  opacity: 1;
+  transition: all .2s ease;
+  margin-bottom: 10px;
+}
+.type-172 .x_title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 1px 5px 6px;
+  margin-bottom: 10px;
+}
+.type-172 .x_title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+}
+.type-172 h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.type-172 .dropdown-menu >li >a {
+  display: block;
+  padding: 3px 20px;
+  clear: ;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: ;
+  white-space: nowrap;
+}
+.type-172 .panel_toolbox {
+  min-width: 70px;
+}
+.type-172 .panel_toolbox >li {
+  float: left;
+  cursor: pointer;
+}
+.type-172 .panel_toolbox >li >a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 14px;
+}
+.type-172 .navbar-right {
+  margin-right: 0;
+}
+.type-172 tbody >tr.mov >td {
+  padding: 9px 33px;
+}
+.type-172 .table {
+  text-align: center;
+}
+.type-172 .table >tbody >tr.mov >td {
+  cursor: auto;
+}
+.type-172 i.fa.fa-search {
+  border: 1px solid #ccc;
+  height: 30px;
+  padding-top: 6px;
+  cursor: pointer;
+  margin-left: -4px;
+  width: 28px;
+  text-align: center;
+  border-radius: 3px;
+}
+@media (max-width: 320px) {
+  .type-172 .x_title h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 146px;
+  }
+  .type-172 .dataTables_filter {
+    margin-left: -17px;
+  }
+  .type-172 .dataTables_wrapper {
+    overflow: auto !important;
+  }
+}
+@media (max-width: 414px) {
+  .type-172 .x_title h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 146px;
+  }
+  .type-172 .dataTables_filter {
+    margin-left: -17px;
+  }
+  .type-172 .dataTables_wrapper {
+    overflow: auto !important;
+  }
+  .type-172 .navbar-right {
+    padding-left: 229px !important;
+  }
+}
+@media (max-width: 360px) {
+  .type-172 .x_title h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 146px;
+  }
+  .type-172 .dataTables_filter {
+    margin-left: -17px;
+  }
+  .type-172 .dataTables_wrapper {
+    overflow: auto !important;
+  }
+  .type-172 .navbar-right {
+    padding-left: 167px !important;
+  }
+}
+@media (max-width: 425px) {
+  .type-172 .x_title h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 146px;
+  }
+  .type-172 .dataTables_filter {
+    margin-left: -17px;
+  }
+  .type-172 .dataTables_wrapper {
+    overflow: auto !important;
+  }
+  .type-172 .x_panel {
+    width: -13px;
+  }
+  .type-172 .navbar-right {
+    padding-left: 244px !important;
+  }
+}
