@@ -28,18 +28,19 @@
     <link href="<?php echo $url_path ?>/css/bootstrap-v3.3.6.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/157.css" rel="stylesheet" type="text/css" />
 
+
     <script src="<?php echo $url_path ?>/js/jquery-v2.2.4.min.js"></script>
     <script src="<?php echo $url_path ?>/js/bootstrap-v3.3.2.min.js"></script>
 
+    <script src="<?php echo $url_path ?>/js/react-with-addons.js"></script>
+    <script src="<?php echo $url_path ?>/js/react-dom.js"></script>
+    <script src="<?php echo $url_path ?>/js/browser.js"></script>
 
 </head>
 
 <body>
     <?php include $dir_block.'/157-content.php'; ?>
-
+    
 </body>
-    <script crossorigin src="https://unpkg.com/react@16.11.0/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16.11.0/umd/react-dom.development.js"></script>
-    <script src="<?php echo $url_path ?>/js/157.js"></script>
-
+<script type="text/babel" src="<?php echo $url_path ?>/js/157.js"></script>
 </html>

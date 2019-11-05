@@ -1,110 +1,124 @@
-"use strict";
+var Item = React.createClass({
+  render: function() {
+    return (
+        <article className="media event">
+          <a className="pull-left date">
+            <p className="month">{this.props.month}</p>
+            <p className="day">{this.props.day}</p>
+          </a>
+          <div className="media-body">
+            <a className="title" href="#">
+              {this.props.title}
+            </a>
+            <p>{this.props.content}</p>
+          </div>
+        </article>
+    );
+  }
+});
 
-var template = React.createElement("div", {
-    className: "col-md-4"
-}, React.createElement("div", {
-    className: "x_panel"
-}, React.createElement("div", {
-    className: "x_title"
-}, React.createElement("h2", null, "Top Profiles ", React.createElement("small", null, "Sessions")), React.createElement("ul", {
-    className: "nav navbar-right panel_toolbox"
-}, React.createElement("li", null, React.createElement("a", {
-    className: "collapse-link"
-}, React.createElement("i", {
-    className: "fa fa-chevron-up"
-}))), React.createElement("li", {
-    className: "dropdown"
-}, React.createElement("a", {
-    href: "#",
-    className: "dropdown-toggle",
-    "data-toggle": "dropdown",
-    role: "button",
-    "aria-expanded": "false"
-}, React.createElement("i", {
-    className: "fa fa-wrench"
-})), React.createElement("ul", {
-    className: "dropdown-menu",
-    role: "menu"
-}, React.createElement("li", null, React.createElement("a", {
-    href: "#"
-}, "Settings 1")), React.createElement("li", null, React.createElement("a", {
-    href: "#"
-}, "Settings 2")))), React.createElement("li", null, React.createElement("a", {
-    className: "close-link"
-}, React.createElement("i", {
-    className: "fa fa-close"
-})))), React.createElement("div", {
-    className: "clearfix"
-})), React.createElement("div", {
-    className: "x_content"
-}, React.createElement("article", {
-    className: "media event"
-}, React.createElement("a", {
-    className: "pull-left date"
-}, React.createElement("p", {
-    className: "month"
-}, "April"), React.createElement("p", {
-    className: "day"
-}, "23")), React.createElement("div", {
-    className: "media-body"
-}, React.createElement("a", {
-    className: "title",
-    href: "#"
-}, "Item One Title"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))), React.createElement("article", {
-    className: "media event"
-}, React.createElement("a", {
-    className: "pull-left date"
-}, React.createElement("p", {
-    className: "month"
-}, "April"), React.createElement("p", {
-    className: "day"
-}, "23")), React.createElement("div", {
-    className: "media-body"
-}, React.createElement("a", {
-    className: "title",
-    href: "#"
-}, "Item Two Title"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))), React.createElement("article", {
-    className: "media event"
-}, React.createElement("a", {
-    className: "pull-left date"
-}, React.createElement("p", {
-    className: "month"
-}, "April"), React.createElement("p", {
-    className: "day"
-}, "23")), React.createElement("div", {
-    className: "media-body"
-}, React.createElement("a", {
-    className: "title",
-    href: "#"
-}, "Item Two Title"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))), React.createElement("article", {
-    className: "media event"
-}, React.createElement("a", {
-    className: "pull-left date"
-}, React.createElement("p", {
-    className: "month"
-}, "April"), React.createElement("p", {
-    className: "day"
-}, "23")), React.createElement("div", {
-    className: "media-body"
-}, React.createElement("a", {
-    className: "title",
-    href: "#"
-}, "Item Two Title"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))), React.createElement("article", {
-    className: "media event"
-}, React.createElement("a", {
-    className: "pull-left date"
-}, React.createElement("p", {
-    className: "month"
-}, "April"), React.createElement("p", {
-    className: "day"
-}, "23")), React.createElement("div", {
-    className: "media-body"
-}, React.createElement("a", {
-    className: "title",
-    href: "#"
-}, "Item Three Title"), React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))))));
-
-
-ReactDOM.render(template, document.getElementById("root"));
-ReactDOM.render(template, document.getElementById("root1"));
-ReactDOM.render(template, document.getElementById("root2"));
+var a = [
+  {
+    id: 1,
+    month: "April",
+    day: 23,
+    title: "Item One Title",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    id: 2,
+    month: "April",
+    day: 23,
+    title: "Item One Title",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    id: 3,
+    month: "April",
+    day: 23,
+    title: "Item One Title",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    id: 4,
+    month: "April",
+    day: 23,
+    title: "Item One Title",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+];
+var han = a.map((item, index) => {
+  return (
+    <div key={item.id}>
+      <Item
+        month={item.month}
+        day={item.day}
+        title={item.title}
+        content={item.content}
+      />
+    </div>
+  );
+});
+var MD = React.createClass({
+  render: function() {
+    return (
+        <div className="col-md-4">
+          <div className="x_panel">
+            <div className="x_title">
+              <h2>
+                Top Profiles <small>Sessions</small>
+              </h2>
+              <ul className="nav navbar-right panel_toolbox">
+                <li>
+                  <a className="collapse-link">
+                    <i className="fa fa-chevron-up"></i>
+                  </a>
+                </li>
+                <li className="dropdown">
+                  <a
+                    href="#"
+                    className="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    <i className="fa fa-wrench"></i>
+                  </a>
+                  <ul className="dropdown-menu" role="menu">
+                    <li>
+                      <a href="#">Settings 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Settings 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a className="close-link">
+                    <i className="fa fa-close"></i>
+                  </a>
+                </li>
+              </ul>
+              <div className="clearfix"></div>
+            </div>
+            <div className="x_content">{han}</div>
+          </div>
+      </div>
+    );
+  }
+});
+var App = React.createClass({
+  render: function() {
+    return (
+      <div className="container">
+        <div className="row">
+          <MD />
+          <MD />
+          <MD />
+        </div>
+      </div>
+    );
+  }
+});
+//render ra code html vào className type-154
+ReactDOM.render(<App />, document.getElementsByClassName("type-157")[0]);
