@@ -1,0 +1,101 @@
+.type-157 {
+  color: #73879c;
+}
+.type-157 .x_panel {
+  width: 100%;
+  padding: 10px 17px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #e6e9ed;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  opacity: 1;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+}
+.type-157 .x_panel .x_title {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e6e9ed;
+  padding: 1px 5px 6px;
+}
+.type-157 .x_panel .x_title h2 {
+  margin: 5px 0 6px;
+  float: left;
+  display: block;
+}
+.type-157 .x_panel .x_title .panel_toolbox {
+  float: right;
+  min-width: 70px;
+}
+.type-157 .x_panel .x_title .panel_toolbox li {
+  float: left;
+  cursor: pointer;
+}
+.type-157 .x_panel .x_title .navbar-right {
+  margin-right: 0;
+}
+.type-157 .x_panel .x_title .nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.type-157 .x_panel .x_title .nav li {
+  position: relative;
+  display: block;
+}
+.type-157 .x_panel .x_title .nav li a {
+  position: relative;
+  display: block;
+  background-color: transparent;
+}
+.type-157 .x_panel .x_content {
+  padding: 0 5px 6px;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+}
+.type-157 .x_panel .x_content .media {
+  width: 100%;
+  overflow: hidden;
+  zoom: 1;
+}
+.type-157 .x_panel .x_content .media .date {
+  background: #ccc;
+  width: 52px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.type-157 .x_panel .x_content .media .date .month {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+.type-157 .x_panel .x_content .media .date .day {
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+.type-157 .x_panel .x_content .media .pull-left {
+  float: left !important;
+}
+.type-157 .x_panel .x_content .media .media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.type-157 .x_panel .x_content .media .media-body .title {
+  font-weight: 700;
+}
+.type-157 .x_panel .x_content .media .media-body a {
+  color: #5a738e;
+}
+.type-157 .x_panel .x_content .media .media-body a:hover {
+  text-decoration: none;
+  color: #2a5583;
+}
+.type-157 .x_panel .x_content .media:first-child {
+  margin-top: 0;
+}
