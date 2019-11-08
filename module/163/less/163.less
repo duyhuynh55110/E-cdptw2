@@ -3,7 +3,13 @@
 .type-163 {
 	color: #73879c;
 	margin-top: 20px;
-	.x_panel {
+	#open, #open1, #open2 {
+		width: 100%;
+		display: none;
+		color: #4285f4 !important;
+		border: 2px solid #4285f4 !important;
+	}
+	.x_panel, .x2, .x3, .x1 {
 		-moz-column-break-inside: avoid;
 		-webkit-column-break-inside: avoid;
 		background: #ffffff;
@@ -14,6 +20,7 @@
 		padding: 10px 17px;
 		transition: all 0.2s ease;
 		width: @width0;
+		
 		.x_title {
 			border-bottom: 2px solid @color0;
 			padding: 1px 5px 6px;
@@ -30,6 +37,9 @@
 			.panel_toolbox {
 				float: right;
 				min-width: 70px;
+				.dropdown-menu {
+					top: auto !important;
+				}
 				li {
 					cursor: pointer;
 					float: left;
@@ -38,7 +48,8 @@
 						font-size: 14px;
 						padding: 5px;
 						&:hover {
-							background: #f5f7fa;
+							background: #fff;
+							color: #20405f;
 						}
 					}
 				}

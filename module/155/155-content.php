@@ -66,7 +66,7 @@
                                             <div class="clearfix"></div>
 
                                         </div>
-                                        <ul class="profiles-user">
+                                        <ul class="profiles-user"> 
                                             <button id="create" type="button" class="btn my-btn" v-on:click="addUser">Create</button>
                                             <li v-for="(user, i) in users" d
                                                 raggable="true"

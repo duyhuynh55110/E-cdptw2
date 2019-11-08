@@ -2,6 +2,14 @@
   color: #73879c;
   margin-top: 20px;
 }
+.type-157 #open,
+.type-157 #open1,
+.type-157 #open2 {
+  width: 100%;
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
 .type-157 .x_panel {
   -moz-column-break-inside: avoid;
   -webkit-column-break-inside: avoid;
@@ -48,7 +56,8 @@
   padding: 5px;
 }
 .type-157 .x_panel .x_title .panel_toolbox li a:hover {
-  background: #f5f7fa;
+  background: #fff;
+  color: #2a5583;
 }
 .type-157 .x_panel .x_title .navbar-right {
   margin-right: 0;

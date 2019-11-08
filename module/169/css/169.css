@@ -9,6 +9,18 @@
   padding: -1px 20px;
   z-index: 2;
 }
+.type-169 #open,
+.type-169 #open1,
+.type-169 #open2 {
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
+.type-169 .my-btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent !important;
+}
 .type-169 a {
   text-decoration: none;
 }
@@ -53,7 +65,8 @@
   padding: 5px;
 }
 .type-169 .x_panel .x_title .panel_toolbox li a:hover {
-  background: #f5f7fa !important;
+  background: #fff;
+  color: #0e3268 !important;
 }
 .type-169 .x_panel .x_title ul .navbar-right {
   margin-right: 0;

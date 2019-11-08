@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="admin-panel">
+                <button id="open1" type="button" class="btn my-btn">+</button>
+                <div class="admin-panel x1">
                     <div class="admin-title">
                         <h3 class="cham">
                             User Uptake
@@ -23,7 +24,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="close-link">
+                                <a class="close-link1">
                                     <i class="fa fa-close"></i>
                                 </a>
                             </li>
@@ -36,7 +37,7 @@
 
                             <div id="chartColumnContainer">
                             </div>
-<div id= "progress"></div>
+                            <div id="progress"></div>
 
                             <div style="margin-top: 15px; margin-bottom: 10px;">
                                 <span>Escudor Wireless 1.0</span>
@@ -94,7 +95,8 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="admin-panel">
+                <button id="open2" type="button" class="btn my-btn">+</button>
+                <div class="admin-panel x2">
                     <div class="admin-title">
                         <h3 class="cham">
                             Today Weather <small>Sessions</small>
@@ -115,7 +117,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="close-link">
+                                <a class="close-link2">
                                     <i class="fa fa-close"></i>
                                 </a>
                             </li>
@@ -199,7 +201,8 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="admin-panel">
+                <button id="open3" type="button" class="btn my-btn">+</button>
+                <div class="admin-panel x3">
                     <div class="admin-title">
                         <h3 class="cham">
                             Incomes <small>Sessions</small>
@@ -220,7 +223,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="close-link">
+                                <a class="close-link3">
                                     <i class="fa fa-close"></i>
                                 </a>
                             </li>

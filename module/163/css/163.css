@@ -2,7 +2,18 @@
   color: #73879c;
   margin-top: 20px;
 }
-.type-163 .x_panel {
+.type-163 #open,
+.type-163 #open1,
+.type-163 #open2 {
+  width: 100%;
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
+.type-163 .x_panel,
+.type-163 .x2,
+.type-163 .x3,
+.type-163 .x1 {
   -moz-column-break-inside: avoid;
   -webkit-column-break-inside: avoid;
   background: #ffffff;
@@ -14,37 +25,68 @@
   transition: all 0.2s ease;
   width: 100%;
 }
-.type-163 .x_panel .x_title {
+.type-163 .x_panel .x_title,
+.type-163 .x2 .x_title,
+.type-163 .x3 .x_title,
+.type-163 .x1 .x_title {
   border-bottom: 2px solid #e6e9ed;
   padding: 1px 5px 6px;
 }
-.type-163 .x_panel .x_title .navbar-right {
+.type-163 .x_panel .x_title .navbar-right,
+.type-163 .x2 .x_title .navbar-right,
+.type-163 .x3 .x_title .navbar-right,
+.type-163 .x1 .x_title .navbar-right {
   float: right;
   margin: 0;
   width: 15%;
 }
-.type-163 .x_panel .x_title .navbar-right li {
+.type-163 .x_panel .x_title .navbar-right li,
+.type-163 .x2 .x_title .navbar-right li,
+.type-163 .x3 .x_title .navbar-right li,
+.type-163 .x1 .x_title .navbar-right li {
   display: inline-block;
   float: right;
   position: static;
 }
-.type-163 .x_panel .x_title .panel_toolbox {
+.type-163 .x_panel .x_title .panel_toolbox,
+.type-163 .x2 .x_title .panel_toolbox,
+.type-163 .x3 .x_title .panel_toolbox,
+.type-163 .x1 .x_title .panel_toolbox {
   float: right;
   min-width: 70px;
 }
-.type-163 .x_panel .x_title .panel_toolbox li {
+.type-163 .x_panel .x_title .panel_toolbox .dropdown-menu,
+.type-163 .x2 .x_title .panel_toolbox .dropdown-menu,
+.type-163 .x3 .x_title .panel_toolbox .dropdown-menu,
+.type-163 .x1 .x_title .panel_toolbox .dropdown-menu {
+  top: auto !important;
+}
+.type-163 .x_panel .x_title .panel_toolbox li,
+.type-163 .x2 .x_title .panel_toolbox li,
+.type-163 .x3 .x_title .panel_toolbox li,
+.type-163 .x1 .x_title .panel_toolbox li {
   cursor: pointer;
   float: left;
 }
-.type-163 .x_panel .x_title .panel_toolbox li a {
+.type-163 .x_panel .x_title .panel_toolbox li a,
+.type-163 .x2 .x_title .panel_toolbox li a,
+.type-163 .x3 .x_title .panel_toolbox li a,
+.type-163 .x1 .x_title .panel_toolbox li a {
   color: #c5c7cb;
   font-size: 14px;
   padding: 5px;
 }
-.type-163 .x_panel .x_title .panel_toolbox li a:hover {
-  background: #f5f7fa;
+.type-163 .x_panel .x_title .panel_toolbox li a:hover,
+.type-163 .x2 .x_title .panel_toolbox li a:hover,
+.type-163 .x3 .x_title .panel_toolbox li a:hover,
+.type-163 .x1 .x_title .panel_toolbox li a:hover {
+  background: #fff;
+  color: #20405f;
 }
-.type-163 .x_panel .x_title h2 {
+.type-163 .x_panel .x_title h2,
+.type-163 .x2 .x_title h2,
+.type-163 .x3 .x_title h2,
+.type-163 .x1 .x_title h2 {
   color: inherit;
   display: block;
   float: left;
@@ -56,48 +98,81 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.type-163 .x_panel .x_title h2 small {
+.type-163 .x_panel .x_title h2 small,
+.type-163 .x2 .x_title h2 small,
+.type-163 .x3 .x_title h2 small,
+.type-163 .x1 .x_title h2 small {
   margin-left: 10px;
 }
-.type-163 .x_panel .x_content {
+.type-163 .x_panel .x_content,
+.type-163 .x2 .x_content,
+.type-163 .x3 .x_content,
+.type-163 .x1 .x_content {
   clear: both;
   float: left;
   margin-top: 5px;
   padding: 0 5px 6px;
   width: 100%;
 }
-.type-163 .x_panel .x_content h4 {
+.type-163 .x_panel .x_content h4,
+.type-163 .x2 .x_content h4,
+.type-163 .x3 .x_content h4,
+.type-163 .x1 .x_content h4 {
   font-size: 16px;
   font-weight: 500;
 }
-.type-163 .x_panel .x_content .form-horizontal .has-feedback .form-control-feedback {
+.type-163 .x_panel .x_content .form-horizontal .has-feedback .form-control-feedback,
+.type-163 .x2 .x_content .form-horizontal .has-feedback .form-control-feedback,
+.type-163 .x3 .x_content .form-horizontal .has-feedback .form-control-feedback,
+.type-163 .x1 .x_content .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;
 }
-.type-163 .x_panel .x_content .form-horizontal .form-group {
+.type-163 .x_panel .x_content .form-horizontal .form-group,
+.type-163 .x2 .x_content .form-horizontal .form-group,
+.type-163 .x3 .x_content .form-horizontal .form-group,
+.type-163 .x1 .x_content .form-horizontal .form-group {
   margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
 }
-.type-163 .x_panel .x_content .form-horizontal .form-group .form-control {
+.type-163 .x_panel .x_content .form-horizontal .form-group .form-control,
+.type-163 .x2 .x_content .form-horizontal .form-group .form-control,
+.type-163 .x3 .x_content .form-horizontal .form-group .form-control,
+.type-163 .x1 .x_content .form-horizontal .form-group .form-control {
   border-radius: 0;
 }
-.type-163 .x_panel .x_content .form-group.has-feedback span {
+.type-163 .x_panel .x_content .form-group.has-feedback span,
+.type-163 .x2 .x_content .form-group.has-feedback span,
+.type-163 .x3 .x_content .form-group.has-feedback span,
+.type-163 .x1 .x_content .form-group.has-feedback span {
   display: block !important;
 }
-.type-163 .x_panel .x_content .form-control-feedback.left {
+.type-163 .x_panel .x_content .form-control-feedback.left,
+.type-163 .x2 .x_content .form-control-feedback.left,
+.type-163 .x3 .x_content .form-control-feedback.left,
+.type-163 .x1 .x_content .form-control-feedback.left {
   border-right: 1px solid #cccccc;
   left: 13px;
 }
-.type-163 .x_panel .x_content .form-control-feedback {
+.type-163 .x_panel .x_content .form-control-feedback,
+.type-163 .x2 .x_content .form-control-feedback,
+.type-163 .x3 .x_content .form-control-feedback,
+.type-163 .x1 .x_content .form-control-feedback {
   color: #bbbbbb;
   font-size: 15px;
   height: 23px;
   line-height: 24px;
   margin-top: 8px;
 }
-.type-163 .x_panel .x_content .has-feedback .form-control {
+.type-163 .x_panel .x_content .has-feedback .form-control,
+.type-163 .x2 .x_content .has-feedback .form-control,
+.type-163 .x3 .x_content .has-feedback .form-control,
+.type-163 .x1 .x_content .has-feedback .form-control {
   padding-right: 42.5px !important;
 }
-.type-163 .x_panel .x_content .form-control.has-feedback-left {
+.type-163 .x_panel .x_content .form-control.has-feedback-left,
+.type-163 .x2 .x_content .form-control.has-feedback-left,
+.type-163 .x3 .x_content .form-control.has-feedback-left,
+.type-163 .x1 .x_content .form-control.has-feedback-left {
   padding-left: 45px !important;
 }

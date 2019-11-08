@@ -1,177 +1,187 @@
 @import "../var/var.less";
 
-
 .type-160 {
-	width: @width1;
-	.admin-panel {
-		background: @color1;
-		border: 1px solid @color2;
-		display: inline-block;
-		margin-bottom: 10px;
-		margin-top: 20px;
-		opacity: 1;
-		padding: 10px 17px;
-		position: relative;
-		transition: all 0.2s ease;
-		width: @width1;
-		.admin-title {
-			border-bottom: 2px solid @color2;
-			margin-bottom: 10px;
-			padding: 1px 5px 6px;
-			h3 {
-				color: @color0;
-				display: block;
-				float: left;
-				font-size: 20px;
-				margin: 5px 0 6px;
-				small {
-					font-size: 13px;
-					margin-left: 10px;
-				}
-			}
-			ul {
-				float: right;
-				list-style: none;
-				margin-top: 5px;
-				min-width: 70px;
-				.collapse-link {
-					opacity: 1;
-				}
-				.close-link {
-					opacity: 1;
-				}
-			}
-			ul>li {
-				cursor: pointer;
-				float: left;
-			}
-			ul>li>a {
-				color: #c5c7cb;
-				font-size: 13px;
-				padding: 5px;
-			}
-		}
-		.admin-content {
-			float: left;
-			margin-top: 5px;
-			padding: 0 5px 6px;
-			width: @width1;
-			.info-progress {
-				color: @color0;
-				.progress {
-					height: @height1;
-					.progress-bar {
-						height: @height1 !important;
-					}
-				}
-				#chartColumnContainer {
-					height: 200px;
-					width: @width1;
-				}
-				span.right {
-					float: right;
-				}
-			}
-			.h-3 {
-				margin-left: 5%;
-				margin-top: 98px !important;
-			}
-			h2 {
-				border-bottom: 2px solid @color3;
-				border-top: 2px solid @color3;
-				font-size: 14px;
-				padding: 5px 0;
-				text-align: center;
-			}
-			h4 {
-				color: @color0;
-				font-size: 13px;
-			}
-			#partly-cloudy-day {
-				display: block;
-			}
-			#snow {
-				display: block;
-			}
-			#sleet {
-				display: block;
-			}
-			#cloudy {
-				display: block;
-			}
-			#clear-day {
-				display: block;
-			}
-			.daily-weather {
-				.day {
-					border-bottom: 2px solid rgba(115,135,156,0.36);
-					border-top: 2px solid rgba(115,135,156,0.36);
-					font-size: 14px;
-					padding: 5px 0;
-					text-align: center;
-				}
-			}
-			.degrees {
-				&:after {
-					content: "o";
-					font-size: 13px;
-					font-weight: 300;
-					position: relative;
-					top: -12px;
-				}
-			}
-			table {
-				th {
-					p {
-						color: @color0;
-					}
-				}
-			}
-			ul {
-				float: left;
-				list-style: none;
-				padding-left: 0;
-				padding: 0px;
-				width: 45%;
-				li {
-					list-style: none;
-					margin: 0;
-					padding-bottom: 6px;
-					padding-top: 4px;
-					i {
-						color: @color0;
-						margin-right: 5px;
-					}
-					a {
-						color: #5a738e;
-						text-decoration: none;
-						&:hover {
-							color: #23527c;
-						}
-					}
-				}
-			}
-			.sidebar-widget {
-				background: @color1;
-				border-radius: 5px;
-				border: 1px solid #abd9ea;
-				float: left;
-				padding: 2px;
-				text-align: center;
-				h4 {
-					font-size: 13px;
-					font-weight: 500;
-				}
-				#jqRadialGauge {
-					height: 80px;
-					width: 150px;
-				}
-			}
-		}
-	}
+  width: @width1;
+  #open3, #open1, #open2{
+    display: none;
+    color: #4285f4 !important;
+    border: 2px solid #4285f4 !important;
+}
+  .admin-panel {
+    background: @color1;
+    border: 1px solid @color2;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    opacity: 1;
+    padding: 10px 17px;
+    position: relative;
+    transition: all 0.2s ease;
+    width: @width1;
+    
+    .admin-title {
+      border-bottom: 2px solid @color2;
+      margin-bottom: 10px;
+      padding: 1px 5px 6px;
+      h3 {
+        color: @color0;
+        display: block;
+        float: left;
+        font-size: 20px;
+        margin: 5px 0 6px;
+        small {
+          font-size: 13px;
+          margin-left: 10px;
+        }
+      }
+      ul {
+        float: right;
+        list-style: none;
+        margin-top: 5px;
+        min-width: 70px;
+        .dropdown-menu {
+          right: 0;
+          left: auto;
+          top: auto !important;
+        }
+        .collapse-link {
+          opacity: 1;
+        }
+        .close-link {
+          opacity: 1;
+        }
+      }
+      ul > li {
+        cursor: pointer;
+        float: left;
+      }
+      ul > li > a {
+        color: #c5c7cb;
+        font-size: 13px;
+        padding: 5px;
+      }
+    }
+    .admin-content {
+      float: left;
+      margin-top: 5px;
+      padding: 0 5px 6px;
+      width: @width1;
+      .info-progress {
+        color: @color0;
+        .progress {
+          height: @height1;
+          .progress-bar {
+            height: @height1 !important;
+          }
+        }
+        #chartColumnContainer {
+          height: 200px;
+          width: @width1;
+        }
+        span.right {
+          float: right;
+        }
+      }
+      .h-3 {
+        margin-left: 5%;
+        margin-top: 98px !important;
+      }
+      h2 {
+        border-bottom: 2px solid @color3;
+        border-top: 2px solid @color3;
+        font-size: 14px;
+        padding: 5px 0;
+        text-align: center;
+      }
+      h4 {
+        color: @color0;
+        font-size: 13px;
+      }
+      #partly-cloudy-day {
+        display: block;
+      }
+      #snow {
+        display: block;
+      }
+      #sleet {
+        display: block;
+      }
+      #cloudy {
+        display: block;
+      }
+      #clear-day {
+        display: block;
+      }
+      .daily-weather {
+        .day {
+          border-bottom: 2px solid rgba(115, 135, 156, 0.36);
+          border-top: 2px solid rgba(115, 135, 156, 0.36);
+          font-size: 14px;
+          padding: 5px 0;
+          text-align: center;
+        }
+      }
+      .degrees {
+        &:after {
+          content: "o";
+          font-size: 13px;
+          font-weight: 300;
+          position: relative;
+          top: -12px;
+        }
+      }
+      table {
+        th {
+          p {
+            color: @color0;
+          }
+        }
+      }
+      ul {
+        float: left;
+        list-style: none;
+        padding-left: 0;
+        padding: 0px;
+        width: 45%;
+        li {
+          list-style: none;
+          margin: 0;
+          padding-bottom: 6px;
+          padding-top: 4px;
+          i {
+            color: @color0;
+            margin-right: 5px;
+          }
+          a {
+            color: #5a738e;
+            text-decoration: none;
+            &:hover {
+              color: #23527c;
+            }
+          }
+        }
+      }
+      .sidebar-widget {
+        background: @color1;
+        border-radius: 5px;
+        border: 1px solid #abd9ea;
+        float: left;
+        padding: 2px;
+        text-align: center;
+        h4 {
+          font-size: 13px;
+          font-weight: 500;
+        }
+        #jqRadialGauge {
+          height: 80px;
+          width: 150px;
+        }
+      }
+    }
+  }
 }
 .highcharts-credits {
-	display: none !important;
+  display: none !important;
 }
 
 @media (max-width: 321px) {

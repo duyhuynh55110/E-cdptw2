@@ -10,6 +10,11 @@
   padding: 10px 20px;
   z-index: 2;
 }
+.type-171 #open {
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
 .type-171 .page-title {
   height: 65px;
   padding: 10px 0;

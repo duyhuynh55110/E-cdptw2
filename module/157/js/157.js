@@ -1,3 +1,4 @@
+
 var Item = React.createClass({
   render: function() {
     return (
@@ -63,6 +64,7 @@ var MD = React.createClass({
   render: function() {
     return (
         <div className="col-md-4">
+         <button id={this.props.open} type="button" class="btn my-btn">+</button>
           <div className="x_panel">
             <div className="x_title">
               <h2>
@@ -112,9 +114,9 @@ var App = React.createClass({
     return (
       <div className="container">
         <div className="row">
-          <MD />
-          <MD />
-          <MD />
+        <MD open ="open"/>
+          <MD open = "open1"/>
+          <MD open = "open2"/>
         </div>
       </div>
     );
@@ -122,3 +124,27 @@ var App = React.createClass({
 });
 //render ra code html vào className type-154
 ReactDOM.render(<App />, document.getElementsByClassName("type-157")[0]);
+$(document).ready(function() {
+  $(".collapse-link").on("click", function() {
+          var a = $(this).closest(".x_panel"),
+              b = $(this).find("i"),
+              c = a.find(".x_content");
+          a.attr("style") ? c.slideToggle(200,
+              function() {
+                  a.removeAttr("style")
+              }) : (c.slideToggle(200),
+              a.css("height", "auto")), b.toggleClass("fa-chevron-up fa-chevron-down")
+      }),
+      $(".close-link").click(function() {
+        var a = $(this).closest(".x_panel");
+        a.hide();
+        $('#open').show();
+
+    })
+
+$('#open').click(function() {
+    var a = $(this).next(".x_panel");
+    a.show();
+    $(this).hide();
+});
+})

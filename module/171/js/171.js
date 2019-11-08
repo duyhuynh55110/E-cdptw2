@@ -11,8 +11,16 @@ $(document).ready(function() {
         }),
         $(".close-link").click(function() {
             var a = $(this).closest(".x_panel");
-            a.remove()
+            a.hide();
+            $('#open').show();
+
         })
+
+    $('#open').click(function() {
+        var a = $(this).next(".x_panel");
+        a.show();
+        $(this).hide();
+    });
 });
 
 //Duy code - list column, sort column, process bar

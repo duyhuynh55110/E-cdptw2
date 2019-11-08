@@ -1,6 +1,13 @@
 .type-160 {
   width: 100%;
 }
+.type-160 #open3,
+.type-160 #open1,
+.type-160 #open2 {
+  display: none;
+  color: #4285f4 !important;
+  border: 2px solid #4285f4 !important;
+}
 .type-160 .admin-panel {
   background: #ffffff;
   border: 1px solid #e6e9ed;
@@ -35,17 +42,22 @@
   margin-top: 5px;
   min-width: 70px;
 }
+.type-160 .admin-panel .admin-title ul .dropdown-menu {
+  right: 0;
+  left: auto;
+  top: auto !important;
+}
 .type-160 .admin-panel .admin-title ul .collapse-link {
   opacity: 1;
 }
 .type-160 .admin-panel .admin-title ul .close-link {
   opacity: 1;
 }
-.type-160 .admin-panel .admin-title ul>li {
+.type-160 .admin-panel .admin-title ul > li {
   cursor: pointer;
   float: left;
 }
-.type-160 .admin-panel .admin-title ul>li>a {
+.type-160 .admin-panel .admin-title ul > li > a {
   color: #c5c7cb;
   font-size: 13px;
   padding: 5px;

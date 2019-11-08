@@ -11,8 +11,27 @@ $(document).ready(function() {
         }),
         $(".close-link").click(function() {
             var a = $(this).closest(".x_panel");
-            a.remove()
+            a.hide();
+            $('#open').show();
+
         })
+
+    $('#open').click(function() {
+        var a = $(this).next(".x_panel");
+        a.show();
+        $(this).hide();
+    });
+    $(".close-link1").click(function() {
+        var a = $(this).closest(".x_panel");
+        a.hide();
+        $('#open1').show();
+
+    })
+    $('#open1').click(function() {
+        var a = $(this).next(".x_panel");
+        a.show();
+        $(this).hide();
+    });
     $(function() {
         $("#sortable").sortable();
         $("#sortable").disableSelection();

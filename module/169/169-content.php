@@ -1,7 +1,9 @@
 <div class="type-169">
     <div class="container">
         <div class="row">
+        
             <div class="col-md-6 col-sm-6 col-xs-12">
+            <button id="open" type="button" class="btn my-btn">Open</button>
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Daily active users <small>Sessions</small></h2>
@@ -99,6 +101,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
+            <button id="open1" type="button" class="btn my-btn">Open</button>
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Daily active users <small>Sessions</small></h2>
@@ -115,7 +118,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            <li><a class="close-link1"><i class="fa fa-close"></i></a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>

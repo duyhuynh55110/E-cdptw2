@@ -21,6 +21,7 @@
 
         <div class="row">
             <div class="col-md-12">
+            <button id="open" type="button" class="btn my-btn">+</button>
                 <div class="x_panel">
                     <div class="x_title">
                         <h2>Projects</h2>

@@ -2,7 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12">
-                <div class="x_panel">
+                <button id="open" type="button" class="btn my-btn">+</button>
+                <div class="x_panel x1">
                     <div class="x_title">
                         <h2>Form Design <small>different form elements</small></h2>
                         <ul class="nav navbar-right panel_toolbox">
@@ -84,7 +85,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="x_panel">
+                <button id="open1" type="button" class="btn my-btn">+</button>
+                <div class="x_panel x2">
                     <div class="x_title">
                         <h2>Star Rating</h2>
                         <ul class="nav navbar-right panel_toolbox">
@@ -100,7 +102,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            <li><a class="close-link1"><i class="fa fa-close"></i></a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
@@ -116,7 +118,8 @@
                         You gave a rating of <span class="stars-count-existing">4</span> star(s)
                     </div>
                 </div>
-                <div class="x_panel">
+                <button id="open2" type="button" class="btn my-btn">+</button>
+                <div class="x_panel x3">
                     <div class="x_title">
                         <h2>Registration Form <small>Click to validate</small></h2>
                         <ul class="nav navbar-right panel_toolbox">
@@ -132,7 +135,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            <li><a class="close-link2"><i class="fa fa-close"></i></a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
