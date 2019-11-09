@@ -1,7 +1,7 @@
-<div class="type-163">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <div class="type-163">
                 <button id="open" type="button" class="btn my-btn">+</button>
                 <div class="x_panel x1">
                     <div class="x_title">

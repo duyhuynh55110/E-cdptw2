@@ -30,16 +30,17 @@
 
     <script src="<?php echo $url_path ?>/js/jquery-v2.2.4.min.js"></script>
     <script src="<?php echo $url_path ?>/js/bootstrap-v3.3.2.min.js"></script>
- 
-   
+
+
 </head>
 
 <body>
     <?php include $dir_block.'/154-content.php'; ?>
-    
+
 
 </body>
-<script crossorigin src="https://unpkg.com/react@16.11.0/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16.11.0/umd/react-dom.development.js"></script>
+<script src="<?php echo $url_path ?>/js/react-with-addons.js"></script>
+<script src="<?php echo $url_path ?>/js/react-dom.js"></script>
 <script src="<?php echo $url_path ?>/js/154.js"></script>
+
 </html>

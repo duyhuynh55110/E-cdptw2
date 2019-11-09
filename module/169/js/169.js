@@ -36,4 +36,23 @@ $(document).ready(function() {
         $("#sortable").sortable();
         $("#sortable").disableSelection();
     });
+
+    $(".flat").click(function() {
+        $('.l').css('color', '#23527c');
+    });
+    $(".flat1").click(function() {
+        $('.l1').css('color', '#23527c');
+    });
+    $(".flat2").click(function() {
+        $('.l2').css('color', '#23527c');
+    });
+    $(".flat3").click(function() {
+        $('.l3').css('color', '#23527c');
+    });
+    $(".flat4").click(function() {
+        $('.l4').css('color', '#23527c');
+    });
+    $(".flat5").click(function() {
+        $('.l5').css('color', '#23527c');
+    });
 })

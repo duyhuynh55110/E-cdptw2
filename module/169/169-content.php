@@ -686,29 +686,29 @@
                     <div class="x_content">
                         <div class="">
                             <ul class="to_do" id="sortable">
-                                <li>
+                                <li class ="l">
                                     <p>
                                         <input type="checkbox" class="flat"> Schedule meeting with new client </p>
                                 </li>
-                                <li>
+                                <li class ="l1">
                                     <p>
-                                        <input type="checkbox" class="flat"> Create email address for new intern</p>
+                                        <input type="checkbox" class="flat1"> Create email address for new intern</p>
                                 </li>
-                                <li>
+                                <li class ="l2">
                                     <p>
-                                        <input type="checkbox" class="flat"> Have IT fix the network printer</p>
+                                        <input type="checkbox" class="flat2"> Have IT fix the network printer</p>
                                 </li>
-                                <li>
+                                <li class ="l3">
                                     <p>
-                                        <input type="checkbox" class="flat"> Copy backups to offsite location</p>
+                                        <input type="checkbox" class="flat3"> Copy backups to offsite location</p>
                                 </li>
-                                <li>
+                                <li class ="l4">
                                     <p>
-                                        <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
+                                        <input type="checkbox" class="flat4"> Food truck fixie locavors mcsweeney</p>
                                 </li>
-                                <li>
+                                <li class ="l5">
                                     <p>
-                                        <input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
+                                        <input type="checkbox" class="flat5"> Food truck fixie locavors mcsweeney</p>
                                 </li>
                             </ul>
                         </div>

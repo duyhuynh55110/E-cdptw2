@@ -35,8 +35,11 @@
 
                         <div class="col-md-12 info-progress">
 
-                            <div id="chartColumnContainer">
+                            
+                            <div id="container" style="width: 100%;">
+                                <canvas id="canvas"></canvas>
                             </div>
+                           
                             <div id="progress"></div>
 
                             <div style="margin-top: 15px; margin-bottom: 10px;">

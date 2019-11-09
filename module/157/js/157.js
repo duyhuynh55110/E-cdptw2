@@ -65,7 +65,7 @@ var MD = React.createClass({
     return (
         <div className="col-md-4">
          <button id={this.props.open} type="button" class="btn my-btn">+</button>
-          <div className="x_panel">
+          <div className={this.props.x_panel}>
             <div className="x_title">
               <h2>
                 Top Profiles <small>Sessions</small>
@@ -96,7 +96,7 @@ var MD = React.createClass({
                   </ul>
                 </li>
                 <li>
-                  <a className="close-link">
+                  <a className={this.props.c}>
                     <i className="fa fa-close"></i>
                   </a>
                 </li>
@@ -114,9 +114,9 @@ var App = React.createClass({
     return (
       <div className="container">
         <div className="row">
-        <MD open ="open"/>
-          <MD open = "open1"/>
-          <MD open = "open2"/>
+        <MD open ="open" x_panel = "x_panel x"  c = "c"/>
+          <MD open = "open1" x_panel = "x_panel x1"  c = "c1"/>
+          <MD open = "open2" x_panel = "x_panel x2"  c = "c2"/>
         </div>
       </div>
     );
@@ -135,16 +135,40 @@ $(document).ready(function() {
               }) : (c.slideToggle(200),
               a.css("height", "auto")), b.toggleClass("fa-chevron-up fa-chevron-down")
       }),
-      $(".close-link").click(function() {
-        var a = $(this).closest(".x_panel");
+      $(".c").click(function() {
+        var a = $(this).closest(".x");
         a.hide();
         $('#open').show();
 
     })
 
 $('#open').click(function() {
-    var a = $(this).next(".x_panel");
+    var a = $(this).next(".x");
     a.show();
     $(this).hide();
+});
+$(".c1").click(function() {
+  var a = $(this).closest(".x1");
+  a.hide();
+  $('#open1').show();
+
+})
+
+$('#open1').click(function() {
+var a = $(this).next(".x1");
+a.show();
+$(this).hide();
+});
+$(".c2").click(function() {
+  var a = $(this).closest(".x2");
+  a.hide();
+  $('#open2').show();
+
+})
+
+$('#open2').click(function() {
+var a = $(this).next(".x2");
+a.show();
+$(this).hide();
 });
 })
