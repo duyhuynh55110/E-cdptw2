@@ -1,0 +1,118 @@
+@import "../var/var.less";
+
+.type-154 {
+  color: #73879c;
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.471;
+  margin-left: 5%;
+  margin-top: 30px;
+  text-align: center;
+  width: 90%;
+  .top_tiles {
+    margin-bottom: 0;
+    .tile-stats {
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #ffffff;
+      border-radius: 5px;
+      border: 1px solid #e4e4e4;
+      display: block;
+      margin-bottom: 12px;
+      overflow: hidden;
+      padding-bottom: 5px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      h3 {
+        color: @color0;
+        margin-left: -70px;
+        padding: 0;
+        position: relative;
+        z-index: 5;
+      }
+      p {
+        margin-left: -46px;
+      }
+      .icon {
+        color: @color0;
+        height: 20px;
+        position: absolute;
+        right: 53px;
+        top: 22px;
+        width: 20px;
+        z-index: 1;
+        i {
+          font-size: 60px;
+          line-height: 0;
+          margin: 0;
+          padding: 0;
+          vertical-align: bottom;
+        }
+      }
+      .count {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.65857;
+        margin: 0 0 0 -160px;
+        padding: 0;
+        position: relative;
+        z-index: 5;
+      }
+    }
+  }
+}
+@media (max-width: 1025px) and (min-width: 769px) {
+  .container {
+    margin-left: @margin-left;
+    width: 107%;
+    .tile-stats {
+      padding-left: 25%;
+    }
+  }
+}
+@media (max-width: 769px) and (min-width: 426px) {
+  .container {
+    .tile-stats {
+      padding-left: 0%;
+      .icon {
+        padding-right: 45px;
+      }
+      .count {
+				margin-left: -200px !important;
+      }
+      h3 {
+				margin-left: -104px !important;
+      }
+      p {
+				margin-left: -80px !important;
+      }
+    }
+  }
+}
+@media (max-width: 426px) and (min-width: 322px) {
+  .container {
+    margin-left: @margin-left;
+    width: 107%;
+    .tile-stats {
+      .icon {
+        padding-right: 45px;
+			}
+			.count {
+				margin-left: -230px !important;
+      }
+      h3 {
+				margin-left: -134px !important;
+      }
+      p {
+				margin-left: -110px !important;
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .container {
+    width: 112%;
+    margin-left: -6%;
+  }
+}
